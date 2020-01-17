@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace命名空间，唯一标识。一般指定为自定义的接口文件，下面相当于这个接口的实现类 -->
+<mapper namespace="com.duogesi.mapper.CompanyMapper">
+   <resultMap id="result" type="com.duogesi.entities.company.supplier_company">
+      <id property="supplier_id" column="supplier_id"></id>
+       <result property="user_id" column="user_id"></result>
+       <result property="contact_name" column="contact_name"></result>
+       <result property="contact_phone" column="contact_phone"></result>
+       <result property="contact_mail" column="contact_mail"></result>
+       <result property="contact_address" column="contact_address"></result>
+       <result property="company_name" column="company_name"></result>
+   </resultMap>
+
+
+
+   <select id="select_address_byid" resultMap="result">
+       select *
+       from supplier_address
+       where user_id=#{user_id}
+   </select>
+    <update id="update_company" parameterType="com.duogesi.entities.company.supplier_company">
+        update supplier_address set contact_name=#{contact_name},contact_phone=#{contact_phone},contact_mail=#{contact_mail},contact_address=#{contact_address}
+         where user_id=#{user_id}
+    </update>
+</mapper>

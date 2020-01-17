@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace命名空间，唯一标识。一般指定为自定义的接口文件，下面相当于这个接口的实现类 -->
+<mapper namespace="com.duogesi.mapper.VehicleMapper">
+   <resultMap id="driver" type="com.duogesi.entities.chehang.driver">
+      <id property="id" column="id"></id>
+      <result column="phone" property="phone"></result>
+      <result column="user_id" property="user_id"></result>
+      <result column="id_card" property="id_card"></result>
+       <result column="name" property="name"></result>
+   </resultMap>
+   <resultMap id="car" type="com.duogesi.entities.chehang.car">
+      <id property="id" column="id"></id>
+      <result column="car_number" property="car_number"></result>
+      <result column="user_id" property="user_id"></result>
+   </resultMap>
+    <!--//    根据ID获取司机-->
+    <select id="get_driver_byid" resultMap="driver">
+        select *
+        from driver_info
+        where id=#{id}
+    </select>
+
+
+    <!--//    根据ID获取车辆-->
+    <select id="get_car_byid" resultMap="car">
+        select *
+        from car_info
+        where id=#{id}
+    </select>
+
+
+   <!--选择driver-->
+  <select id="select_driver" resultMap="driver">
+      select *
+      from fba.driver_info
+      where user_id=#{user_id} limit #{currIndex} , #{pageSize}
+  </select>
+   <!--选择car-->
+   <select id="select_car" resultMap="car">
+      select *
+      from fba.car_info
+      where user_id=#{user_id} limit #{currIndex} , #{pageSize}
+  </select>
+    <!--选择driver-->
+    <select id="select_driver_all" resultMap="driver">
+      select *
+      from fba.driver_info
+      where user_id=#{user_id}
+  </select>
+    <!--选择car-->
+    <select id="select_car_all" resultMap="car">
+      select *
+      from fba.car_info
+      where user_id=#{user_id}
+  </select>
+
+    <insert id="insert_car" parameterType="com.duogesi.entities.chehang.car">
+        insert into car_info (car_number, user_id)  value (#{car_number},#{user_id})
+    </insert>
+    <insert id="insert_driver" parameterType="com.duogesi.entities.chehang.driver">
+        insert into driver_info (phone, user_id, id_card,name) value (#{phone},#{user_id},#{id_card},#{name})
+    </insert>
+
+<!--    删除司机-->
+    <delete id="delete_driver">
+        delete from driver_info where id=#{id}
+    </delete>
+<!--    删除车辆-->
+    <delete id="delete_car">
+        delete from car_info where id=#{id}
+    </delete>
+</mapper>
