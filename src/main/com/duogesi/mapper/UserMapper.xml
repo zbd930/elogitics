@@ -21,6 +21,11 @@
         <result column="name" property="name"/>
         <result column="email" property="email"/>
         <result column="address" property="address"/>
+        <collection property="ccmails" ofType="com.duogesi.entities.huodai.copy_email">
+            <result property="email_id" column="email_id" />
+            <result property="subscriber_id" column="subscriber_id" />
+            <result property="email_address" column="email_address" />
+        </collection>
     </resultMap>
 
           <select id="get_user"  resultMap="my">
@@ -32,8 +37,15 @@
             </update>
     <!--获取发件人邮箱-->
             <select id="get_emial" resultMap="address">
-                select *
-                from fba.subscriber_address
-                where id=#{id};
+                select s.*,c.email_address
+                from fba.subscriber_address as s,fba.copy_email as c
+                where s.id=#{id} and s.id=c.subscriber_id;
             </select>
+<!--        获取CC邮箱-->
+            <select id="get_cc_email" resultType="com.duogesi.entities.huodai.copy_email">
+                select email_address
+                from copy_email
+                where subscriber_id=#{subscriber_id}
+            </select>
+
 </mapper>

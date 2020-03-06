@@ -57,10 +57,11 @@
             document.getElementById('light').style.display='none';
             document.getElementById('fade').style.display='none'
         }
-        function openDialog1(id,email,numbers){
+        function openDialog1(id,email,numbers,subscriber_id){
             $("#id1").val(id);
             $("#id2").val(email);
             $("#id3").val(numbers);
+            $("#id4").val(subscriber_id);
             document.getElementById('light1').style.display='block';
             document.getElementById('fade1').style.display='block'
         }
@@ -113,7 +114,7 @@
                     <td>${o.statu}</td>
                     <td>${o.order_details.beizhu}</td>
                     <td>${o.order_details.ups}</td>
-                    <td><a href = "JavaScript:void(0)" onclick = "openDialog(${o.id})">修改UPS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href = "JavaScript:void(0)" onclick = "openDialog1(${o.id},'${o.subscriber_address.email}','${o.numbers}')">更新数据</a></td>
+                    <td><a href = "JavaScript:void(0)" onclick = "openDialog(${o.id})">修改UPS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href = "JavaScript:void(0)" onclick = "openDialog1(${o.id},'${o.subscriber_address.email}','${o.numbers}','${o.subscriber_address.id}')">更新数据</a></td>
                     <td><a href="<%=path%>/huodai/data.do?id=${o.id}&&numbers=${o.numbers}&&address_id=${o.address_id}&&dest=${o.dest}">查看资料</a> </td>
                     </tr>
                 </c:forEach>
@@ -134,6 +135,7 @@
                     <input type="number" name="id" id="id1"  style="display: none;">
                     <input type="text" name="email" id="id2"  style="display: none;">
                     <input type="text" name="numbers" id="id3"  style="display: none;">
+                    <input type="text" name="subscriber_id" id="id4"  style="display: none;">
                     <input type="number" name="item_id"  value="${details.ship_id}"  style="display: none;">
                     <input type="number"  name="ctn" placeholder="请输入箱数" style="width: 60%" >
                     <input type="number" step="0.01" name="weight" placeholder="请输入重量" style="width: 60%" >

@@ -109,7 +109,7 @@ public class received_order_aspect {
             stringBuilder.append("您的订单" + numbers + " 已经货到仓库。<br>如有问题请及时联系客服，感谢您的使用！");
             subscriber_address subscriber_address = userMapper.get_emial(address_id);
             try {
-                mymail.send(subscriber_address.getEmail(), String.valueOf(stringBuilder), "【您的货物状态更新了】");
+                mymail.send(subscriber_address.getEmail(), String.valueOf(stringBuilder), "【您的货物状态更新了】",subscriber_address.getCcmails());
                 point.proceed();
             } catch (Exception e) {
                 e.printStackTrace();
@@ -135,7 +135,7 @@ public class received_order_aspect {
             String context = "您的订单" + numbers + " 已经货到仓库。感谢您的关注";
             subscriber_address subscriber_address = userMapper.get_emial(address_id);
             try {
-                mymail.send(subscriber_address.getEmail(), context, "【您的货物状态更新了】");
+                mymail.send(subscriber_address.getEmail(), context, "【您的货物状态更新了】",subscriber_address.getCcmails());
             } catch (Exception e) {
                 e.printStackTrace();
             } catch (Throwable throwable) {

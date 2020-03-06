@@ -1,6 +1,8 @@
 package com.duogesi.service;
 
 import com.duogesi.Mail.Mymail;
+import com.duogesi.entities.company.subscriber_address;
+import com.duogesi.entities.huodai.copy_email;
 import com.duogesi.mapper.UserMapper;
 import com.duogesi.mapper.amountMapper;
 import org.apache.commons.io.FilenameUtils;
@@ -10,6 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 import java.util.UUID;
 
 import static com.duogesi.service.Huodaiservice.getaBoolean;
@@ -28,13 +31,16 @@ public class Uploadservice {
         String filename = image.getOriginalFilename();//获取上传时的文件名称
         System.out.println(filename);
         if (filename==null||filename.equals("")) {
-            String email = userMapper.get_emial(address_id).getEmail();
+            subscriber_address subscriber_address=userMapper.get_emial(address_id);
+            String email = subscriber_address.getEmail();
+            //获取抄送的邮件
+            List<copy_email> cc=userMapper.get_cc_email(subscriber_address.getId());
             StringBuilder neirong = new StringBuilder();
             neirong.append("您的货物：" + numbers + " 。更新其他费用如下：<br/>报关费：" + customer + ",关税：" + tax + ",杂费" + inspect + ",明细如下：" + mycontext + "<br/>如有疑问请在改票货物收到的第一封税单确认邮件收到后的3个自然日内向客服提出，过期将默认。");
             try {
                 //将杂费保存数据库
                 amountMapper.updata_local(tax, customer, inspect, id);
-                mymail.send(email, String.valueOf(neirong),"【杂费确认】");
+                mymail.send(email, String.valueOf(neirong),"【杂费确认】",cc);
                 return true;
             } catch (Exception e) {
                 e.printStackTrace();

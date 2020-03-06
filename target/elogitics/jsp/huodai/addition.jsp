@@ -72,6 +72,12 @@
                                 <option value="3C类电子">3C类电子</option>
                             </select>
                             <input type="number" name="price" style="width: 100px">/KG
+                            <select name="country">
+                                <option value="American">美线</option>
+                                <option value="Europe">欧线</option>
+                                <option value="Japan">日本线</option>
+                                <option value="Canda">加拿大线</option>
+                            </select>
                             <button style="display: block;margin-left:45%">提交</button>
                         </form>
                     </div>

@@ -85,13 +85,13 @@
             <div class="menu-top">
                 <h1 style="padding-left: 3%;">价格查看</h1>
             </div>
-            <div class="middle" style="height: 600px;overflow:scroll;">
-                <ul id="layoutTarget" class="layout">
-                    <li style="display: inline;cursor: pointer" onclick="swich1()"><strong>1. </strong>美线</li>
-                    <li style="display: inline;cursor: pointer" onclick="swich2()"><strong>2. </strong>加拿大线</li>
-                    <li style="display: inline;cursor: pointer" onclick="swich3()"><strong>3. </strong>欧线</li>
-                    <li style="display: inline;cursor: pointer" onclick="swich4()"><strong>4. </strong>日本线</li>
-                </ul>
+            <ul id="layoutTarget" class="layout">
+                <li style="display: inline;cursor: pointer" onclick="swich1()"><strong>1. </strong>美线</li>
+                                    <li style="display: inline;cursor: pointer" onclick="swich2()"><strong>2. </strong>加拿大线</li>
+                                    <li style="display: inline;cursor: pointer" onclick="swich3()"><strong>3. </strong>欧线</li>
+                                    <li style="display: inline;cursor: pointer" onclick="swich4()"><strong>4. </strong>日本线</li>
+            </ul>
+            <div class="middle" class="layout">
                <div style="white-space: nowrap;">
 <%--                   //美线--%>
                    <div style="display: block" id="table1">

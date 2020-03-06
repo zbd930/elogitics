@@ -9,6 +9,7 @@ import com.duogesi.entities.chehang.order_details;
 import com.duogesi.entities.chehang.temple_data;
 import com.duogesi.entities.huodai.*;
 import com.duogesi.mapper.ShipMapper;
+import com.duogesi.mapper.UserMapper;
 import com.duogesi.mapper.additionMapper;
 import org.apache.commons.beanutils.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,7 +51,7 @@ public class Huodaiservice {
     @Autowired
     private com.duogesi.mapper.additionMapper additionMapper;
     @Autowired
-    private SerializeUtil serializeUtil;
+    private UserMapper userMapper;
     @Autowired
     private Swtich swtich;
 
@@ -353,7 +354,7 @@ public class Huodaiservice {
     }
 
     //更新到仓的数据
-    public Boolean daocang(int id, temple_data data, String email, String numbers, MultipartFile[] image, HttpServletRequest req, int item_id, int user_id) throws IllegalAccessException, IntrospectionException, InvocationTargetException {
+    public Boolean daocang(int id, temple_data data, String email, String numbers,int subscriber_id, MultipartFile[] image, HttpServletRequest req, int item_id, int user_id) throws IllegalAccessException, IntrospectionException, InvocationTargetException {
         if (chehangMapper.get_change(id)==0&&chehangMapper.before_update(id)==2) {
             Mymail mymail = new Mymail();
             String[] path = new String[image.length];
@@ -394,7 +395,9 @@ public class Huodaiservice {
                 }
             } else {
                 try {
-                    mymail.send(email, String.valueOf(s), "【数据确认】");
+                    //获取抄送的邮件
+                    List<copy_email> cc=userMapper.get_cc_email(subscriber_id);
+                    mymail.send(email, String.valueOf(s), "【数据确认】",cc);
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {

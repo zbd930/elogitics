@@ -112,7 +112,8 @@ public class Register_order_aspect {
                     stringBuilder.append("您的订单号:"+numbers+"已被接受。<br> 收货司机名称是"+driver.getName()+"; 电话是"+driver.getPhone()+"; 车牌号是"+car.getCar_number()+";<br>后续进程将会以邮件通知，请记得查收。");
             try {
                         //发送邮件
-                        mymail.send(address.getEmail(), String.valueOf(stringBuilder),"【您的货物状态更新了】");
+                System.out.println(address.getCcmails().toString());
+                        mymail.send(address.getEmail(), String.valueOf(stringBuilder),"【您的货物状态更新了】",address.getCcmails());
                         result = 1;
                     }catch (Exception e){
                         result = 3;

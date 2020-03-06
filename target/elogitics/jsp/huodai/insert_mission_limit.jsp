@@ -66,6 +66,7 @@
                             <option value="深圳">深圳</option>
                             <option value="上海">上海</option>
                             <option value="义乌">义乌</option>
+                              <option value="宁波">宁波</option>
                             <option value="广州">广州</option>
                         </select>
                         </p>

@@ -80,7 +80,6 @@
 <body>
         <jsp:include page="../items/top.jsp" flush="true"/>
         <jsp:include page="../items/left.jsp" flush="true"/>
-
         <div class="main">
             <div class="menu-top">
                 <h1 style="padding-left: 3%;">价格查看</h1>

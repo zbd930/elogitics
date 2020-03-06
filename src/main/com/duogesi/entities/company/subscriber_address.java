@@ -2,6 +2,7 @@ package com.duogesi.entities.company;
 
 import com.duogesi.entities.chehang.order;
 import com.duogesi.entities.huodai.Ship;
+import com.duogesi.entities.huodai.copy_email;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -16,6 +17,15 @@ public class subscriber_address {
     private String email;
     private List<order> orders;
     private Ship ship;
+    private List<copy_email> ccmails;
+
+    public List<copy_email> getCcmails() {
+        return ccmails;
+    }
+
+    public void setCcmails(List<copy_email> ccmails) {
+        this.ccmails = ccmails;
+    }
 
     public Ship getShip() {
         return ship;
@@ -81,6 +91,7 @@ public class subscriber_address {
         this.address = address;
     }
 
+
     @Override
     public String toString() {
         return "subscriber_address{" +
@@ -91,6 +102,7 @@ public class subscriber_address {
                 ", address='" + address + '\'' +
                 ", email='" + email + '\'' +
                 ", orders=" + orders +
+                ", ship=" + ship +
                 '}';
     }
 }

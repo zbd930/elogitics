@@ -2,7 +2,9 @@ package com.duogesi.Aspect;
 
 import com.duogesi.Mail.Mymail;
 import com.duogesi.entities.chehang.order;
+import com.duogesi.entities.company.subscriber_address;
 import com.duogesi.entities.huodai.Ship;
+import com.duogesi.entities.huodai.copy_email;
 import com.duogesi.mapper.ShipMapper;
 import com.duogesi.mapper.UserMapper;
 import com.duogesi.mapper.chehangMapper;
@@ -98,14 +100,17 @@ public class Update_status_aspect {
             //获取一个航次中对应的所有用户订单
             List<order> orders = chehangMapper.get_address_id(number);
             String[] emails = new String[orders.size()];
+            int[] subscriber_id = new int[orders.size()];
             int[] ids = new int[orders.size()];
             String[] upss=new String[orders.size()];
             Boolean value = false;
             int[] statu=new int[orders.size()];
             String[] numbers=new String[orders.size()];
             for (int i = 0; i < orders.size(); i++) {
+                subscriber_address subscriber_address=userMapper.get_emial(orders.get(i).getAddress_id());
                 //获取对应的邮件
-                emails[i] = userMapper.get_emial(orders.get(i).getAddress_id()).getEmail();
+                emails[i] = subscriber_address.getEmail();
+                subscriber_id[i]=subscriber_address.getId();
                 //获取对应的单号
                 ids[i] = orders.get(i).getId();
                 //获取对应的UPS单号
@@ -141,7 +146,9 @@ public class Update_status_aspect {
                                     s.append("单号：" + numbers[i] + "。<br>更新状态为：" + new_status +",UPS单号为 " + upss[i]+",<br>如有问题，请及时与客服取得联系");
                                 }
                                 try {
-                                    mymail.send(emails[i], String.valueOf(s),"【您的货物状态更新了】");
+                                    //获取抄送的邮件
+                                    List<copy_email> cc=userMapper.get_cc_email(subscriber_id[i]);
+                                    mymail.send(emails[i], String.valueOf(s),"【您的货物状态更新了】",cc);
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
@@ -159,14 +166,17 @@ public class Update_status_aspect {
                 //获取一个航次中对应的所有用户订单
                 List<order> orders = chehangMapper.get_address_id(number);
                 String[] emails = new String[orders.size()];
+                int[] subscriber_id = new int[orders.size()];
                 int[] ids = new int[orders.size()];
                 String[] upss=new String[orders.size()];
                 Boolean value = false;
                 int[] statu=new int[orders.size()];
                 String[] numbers=new String[orders.size()];
                 for (int i = 0; i < orders.size(); i++) {
+                    subscriber_address subscriber_address=userMapper.get_emial(orders.get(i).getAddress_id());
                     //获取对应的邮件
-                    emails[i] = userMapper.get_emial(orders.get(i).getAddress_id()).getEmail();
+                    emails[i] = subscriber_address.getEmail();
+                    subscriber_id[i]=subscriber_address.getId();
                     //获取对应的单号
                     ids[i] = orders.get(i).getId();
                     //获取对应的UPS单号
@@ -202,7 +212,9 @@ public class Update_status_aspect {
                                     s.append("单号：" + numbers[i] + "  ,更新状态为：" + new_status +"<br>UPS单号为 " + upss[i]);
                                 }
                                 try {
-                                    mymail.send(emails[i], String.valueOf(s),"【您的货物状态更新了】");
+                                    //获取抄送的邮件
+                                    List<copy_email> cc=userMapper.get_cc_email(subscriber_id[i]);
+                                    mymail.send(emails[i], String.valueOf(s),"【您的货物状态更新了】",cc);
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
@@ -221,14 +233,17 @@ public class Update_status_aspect {
                         //获取一个航次中对应的所有用户订单
                         List<order> orders = chehangMapper.get_address_id(number);
                         String[] emails = new String[orders.size()];
+                        int[] subscriber_id = new int[orders.size()];
                         int[] ids = new int[orders.size()];
                         String[] upss=new String[orders.size()];
                         Boolean value = false;
                         int[] statu=new int[orders.size()];
                         String[] numbers=new String[orders.size()];
                         for (int i = 0; i < orders.size(); i++) {
+                            subscriber_address subscriber_address=userMapper.get_emial(orders.get(i).getAddress_id());
                             //获取对应的邮件
-                            emails[i] = userMapper.get_emial(orders.get(i).getAddress_id()).getEmail();
+                            emails[i] = subscriber_address.getEmail();
+                            subscriber_id[i]=subscriber_address.getId();
                             //获取对应的单号
                             ids[i] = orders.get(i).getId();
                             //获取对应的UPS单号
@@ -264,7 +279,9 @@ public class Update_status_aspect {
                                             s.append("单号：" + numbers[i] + "  ,更新状态为：" + new_status +"<br>UPS单号为 " + upss[i]);
                                         }
                                         try {
-                                            mymail.send(emails[i], String.valueOf(s),"【您的货物状态更新了】");
+                                            //获取抄送的邮件
+                                            List<copy_email> cc=userMapper.get_cc_email(subscriber_id[i]);
+                                            mymail.send(emails[i], String.valueOf(s),"【您的货物状态更新了】",cc);
                                         } catch (Exception e) {
                                             e.printStackTrace();
                                         }

@@ -414,7 +414,7 @@ public class Huodaiservlet {
     }
     //更新到仓的数据
     @RequestMapping(value = "daocang.do",method = RequestMethod.POST)
-    public ModelAndView daocang(ModelAndView mv, temple_data data, int id, int item_id, String email, @RequestParam("image") MultipartFile[] image, HttpServletRequest request, String numbers){
+    public ModelAndView daocang(ModelAndView mv, temple_data data, int id, int item_id, String email,int subscriber_id, @RequestParam("image") MultipartFile[] image, HttpServletRequest request, String numbers){
         mv.setViewName("redirect:/huodai/allmission.do?page=1");
         User user =(User)session.getAttribute("user");
         Boolean result=false;
@@ -424,7 +424,7 @@ public class Huodaiservlet {
             return mv;
         }
         try {
-            result=huodaiservice.daocang(id, data, email, numbers, image, request,item_id,user.getId());
+            result=huodaiservice.daocang(id, data, email, numbers,subscriber_id, image, request,item_id,user.getId());
            if(result) {
                mv.addObject("final", "success");
            }else {
