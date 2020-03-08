@@ -226,22 +226,26 @@ public class Huodaiservlet {
     @RequestMapping(value = "haipai.do")
     public  ModelAndView haipai(ModelAndView mv) throws Exception{
         User user=(User)session.getAttribute("user");
-        List<price_include> haipai=huodaiservice.get_price_haipai(user.getId(),"American");
-        List<price_include> meiseng=huodaiservice.get_price_meiseng(user.getId(),"American");
-        List<price_include> Canda_normal=huodaiservice.get_price_haipai(user.getId(),"Canada");
-        List<price_include> Canda_fast=huodaiservice.get_price_meiseng(user.getId(),"Canada");
-        List<price_include> Eurpor_normal=huodaiservice.get_price_haipai(user.getId(),"Europe");
-        List<price_include> Eurpor_fast=huodaiservice.get_price_meiseng(user.getId(),"Europe");
-        List<price_include> Japan_normal=huodaiservice.get_price_haipai(user.getId(),"Japan");
-        List<price_include> Japan_fast=huodaiservice.get_price_meiseng(user.getId(),"Japan");
-        mv.addObject("haipai",haipai);
-        mv.addObject("meiseng",meiseng);
-        mv.addObject("Canda_normal",Canda_normal);
-        mv.addObject("Canda_fast",Canda_fast);
-        mv.addObject("Eurpor_normal",Eurpor_normal);
-        mv.addObject("Eurpor_fast",Eurpor_fast);
-        mv.addObject("Japan_normal",Japan_normal);
-        mv.addObject("Japan_fast",Japan_fast);
+        try {
+            List<price_include> haipai = huodaiservice.get_price_haipai(user.getId(), "American");
+            List<price_include> meiseng = huodaiservice.get_price_meiseng(user.getId(), "American");
+            List<price_include> Canda_normal = huodaiservice.get_price_haipai(user.getId(), "Canada");
+            List<price_include> Canda_fast = huodaiservice.get_price_meiseng(user.getId(), "Canada");
+            List<price_include> Eurpor_normal = huodaiservice.get_price_haipai(user.getId(), "Europe");
+            List<price_include> Eurpor_fast = huodaiservice.get_price_meiseng(user.getId(), "Europe");
+            List<price_include> Japan_normal = huodaiservice.get_price_haipai(user.getId(), "Japan");
+            List<price_include> Japan_fast = huodaiservice.get_price_meiseng(user.getId(), "Japan");
+            mv.addObject("haipai",haipai);
+            mv.addObject("meiseng",meiseng);
+            mv.addObject("Canda_normal",Canda_normal);
+            mv.addObject("Canda_fast",Canda_fast);
+            mv.addObject("Eurpor_normal",Eurpor_normal);
+            mv.addObject("Eurpor_fast",Eurpor_fast);
+            mv.addObject("Japan_normal",Japan_normal);
+            mv.addObject("Japan_fast",Japan_fast);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         mv.setViewName("huodai/add_price_includetax_hai");
        return mv;
     }

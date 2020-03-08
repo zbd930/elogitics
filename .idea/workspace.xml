@@ -6,78 +6,55 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad388af5-08bb-4ef8-b524-a3bcc37f11d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="8beb0200-75c3-446f-9a52-8eb8d5849ed2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3e2b959a-345f-42f9-997a-6a3e32f8dcd5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/duogesi/Aspect/Register_order_aspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/duogesi/Aspect/Register_order_aspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/duogesi/Aspect/Update_status_aspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/duogesi/Aspect/Update_status_aspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/duogesi/Aspect/received_order_aspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/duogesi/Aspect/received_order_aspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/duogesi/Mail/Mymail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/duogesi/Mail/Mymail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/duogesi/controller/options/Huodaiservlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/duogesi/controller/options/Huodaiservlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/duogesi/entities/company/subscriber_address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/duogesi/entities/company/subscriber_address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/duogesi/entities/huodai/addition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/duogesi/entities/huodai/addition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/duogesi/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/duogesi/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/duogesi/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/duogesi/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/duogesi/service/Huodaiservice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/duogesi/service/Huodaiservice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/duogesi/mapper/priceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/duogesi/mapper/priceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/duogesi/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/duogesi/service/Uploadservice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/duogesi/service/Uploadservice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/duogesi/service/Userservice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/duogesi/service/Userservice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/com/duogesi/controller/UserservletTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/jdbc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_includetax_hai.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_includetax_hai.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_includetax_kong.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_includetax_kong.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/addition.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/addition.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/details.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_nottax.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_nottax.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/insert_mission.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/insert_mission.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/insert_mission_limit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/insert_mission_limit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/duogesi/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duogesi/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/resource/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resource/spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duogesi/controller/options/Huodaiservlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duogesi/controller/options/Huodaiservlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duogesi/mapper/priceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duogesi/mapper/priceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duogesi/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/add_price_includetax_hai.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/add_price_includetax_hai.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/add_price_includetax_kong.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/add_price_includetax_kong.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/add_price_nottax.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/add_price_nottax.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/addition.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/addition.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/details.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/insert_mission.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/insert_mission.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/insert_mission_limit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/insert_mission_limit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/elogitics.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/META-INF/elogitics.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/META-INF/elogitics.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/Aspect/Register_order_aspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/Aspect/Register_order_aspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/Aspect/Update_status_aspect$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/Aspect/Update_status_aspect$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/Aspect/Update_status_aspect$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/Aspect/Update_status_aspect$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/Aspect/Update_status_aspect$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/Aspect/Update_status_aspect$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/Aspect/Update_status_aspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/Aspect/Update_status_aspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/Aspect/received_order_aspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/Aspect/received_order_aspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/Mail/Mymail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/Mail/Mymail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/elogitics/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/controller/options/Huodaiservlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/controller/options/Huodaiservlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/entities/company/subscriber_address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/entities/company/subscriber_address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/entities/huodai/addition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/entities/huodai/addition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/service/Huodaiservice$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/service/Huodaiservice$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/service/Huodaiservice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/service/Huodaiservice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/service/Uploadservice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/service/Uploadservice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/service/Userservice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/service/Userservice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/resource/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/resource/spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/mapper/priceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/mapper/priceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/add_price_includetax_hai.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/add_price_includetax_hai.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/add_price_includetax_kong.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/add_price_includetax_kong.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/add_price_nottax.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/add_price_nottax.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/addition.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/addition.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/details.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/insert_mission.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/insert_mission.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/insert_mission_limit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/insert_mission_limit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/lib/junit-4.13-rc-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/lib/testng-7.0.0.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/elogitics/jsp/huodai/add_price_includetax_hai.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/jsp/huodai/add_price_includetax_hai.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/elogitics/jsp/huodai/add_price_includetax_kong.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/jsp/huodai/add_price_includetax_kong.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/elogitics/jsp/huodai/add_price_nottax.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/jsp/huodai/add_price_nottax.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/jsp/huodai/addition.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/jsp/huodai/addition.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/jsp/huodai/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/jsp/huodai/details.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/elogitics/jsp/huodai/insert_mission.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/jsp/huodai/insert_mission.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/elogitics/jsp/huodai/insert_mission_limit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/jsp/huodai/insert_mission_limit.jsp" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,46 +74,240 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="fba@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="fba@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="fba@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="fba: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="fba: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="fba@yikuajing.cn" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="fba@yikuajing.cn" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="fba: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="copy_email: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="fba@yikuajing.cn" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="fba: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="JUnit5 Test Class" />
-      </list>
-    </option>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1718101966">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="copy_email" value="2" />
+          <entry key="java" value="25" />
+          <entry key="jsp" value="7" />
+          <entry key="orders" value="1" />
+          <entry key="orders_details" value="1" />
+          <entry key="price_include" value="2" />
+          <entry key="price_noinclude" value="2" />
+          <entry key="properties" value="2" />
+          <entry key="schdule_details" value="1" />
+          <entry key="ship_schdule" value="5" />
+          <entry key="sql" value="6" />
+          <entry key="subscriber_address" value="1" />
+          <entry key="xml" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Database Element" value="15" />
+          <entry key="JAVA" value="25" />
+          <entry key="JSP" value="7" />
+          <entry key="Properties" value="2" />
+          <entry key="SQL" value="1" />
+          <entry key="Scratch" value="5" />
+          <entry key="XML" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cell" value="61" />
+          <entry key="java" value="112" />
+          <entry key="jsp" value="21" />
+          <entry key="properties" value="72" />
+          <entry key="sql" value="109" />
+          <entry key="txt" value="10" />
+          <entry key="xml" value="156" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="112" />
+          <entry key="JSP" value="21" />
+          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="Properties" value="72" />
+          <entry key="SQL" value="56" />
+          <entry key="Scratch" value="124" />
+          <entry key="XML" value="146" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/huodai/insert_mission.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3496">
+              <caret line="225" column="86" selection-start-line="225" selection-start-column="86" selection-end-line="225" selection-end-column="86" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#STYLE#0;n#input#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#p#1;n#!!top" expanded="true" />
+                <element signature="e#1835#1990#0#HTML" />
+                <element signature="e#2016#2171#0#HTML" />
+                <element signature="e#2197#2352#0#HTML" />
+                <element signature="e#2378#2533#0#HTML" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resource/jdbc.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6ad2957b-8b21-462c-8642-e23096b4d048/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://6ad2957b-8b21-462c-8642-e23096b4d048/schema/fba/table/price_include">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="das://6ad2957b-8b21-462c-8642-e23096b4d048/schema/fba/table/price_noinclude">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://6ad2957b-8b21-462c-8642-e23096b4d048/schema/fba/table/ship_schdule">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/entities/huodai/Ship.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/controller/options/Huodaiservlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="102" column="59" selection-start-line="102" selection-start-column="59" selection-end-line="102" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/Utils/RedisUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="176" selection-start-line="176" selection-end-line="176" />
+              <folding>
+                <element signature="e#4174#4175#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>get_before_update_rate_haika</find>
+      <find>AI1206124</find>
+      <find>get_emial</find>
+      <find>get_user</find>
+      <find>8801206486</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="E:\project\new\elogitics\.idea" />
-      </set>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_includetax_kong.jsp" />
+        <option value="$PROJECT_DIR$/src/main/com/duogesi/controller/options/Huodaiservlet.java" />
+        <option value="$PROJECT_DIR$/src/main/com/duogesi/mapper/priceMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/com/duogesi/mapper/ShipMapper.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/81855f0e-632c-4806-92f7-4870048e9782/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_nottax.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_includetax_hai.jsp" />
+        <option value="$PROJECT_DIR$/src/main/com/duogesi/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/com/duogesi/Aspect/received_order_aspect.java" />
+        <option value="$PROJECT_DIR$/src/main/com/duogesi/Aspect/Register_order_aspect.java" />
+        <option value="$PROJECT_DIR$/src/main/com/duogesi/service/Uploadservice.java" />
+        <option value="$PROJECT_DIR$/src/main/com/duogesi/service/Userservice.java" />
+        <option value="$PROJECT_DIR$/src/main/com/duogesi/Aspect/Update_status_aspect.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/81855f0e-632c-4806-92f7-4870048e9782/console_1.sql" />
+        <option value="$PROJECT_DIR$/src/main/com/duogesi/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/com/duogesi/entities/huodai/Ship.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/huodai/insert_mission.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resource/jdbc.properties" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6ad2957b-8b21-462c-8642-e23096b4d048/console.sql" />
+      </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -157,71 +328,131 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectId" id="1YgsnKayXgqBd9izgHCZVQ2bxoJ" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="9" />
+    <option name="width" value="1920" />
+    <option name="height" value="1047" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="CatdeaLogs" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="elogitics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elogitics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elogitics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elogitics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elogitics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elogitics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elogitics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elogitics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="duogesi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elogitics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elogitics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elogitics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elogitics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elogitics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elogitics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elogitics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elogitics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="huodai" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582718508333" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="E:/../php/php.exe" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583557218348" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../php/php.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.duogesi.mapper" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.tomcat">
-    <configuration name="UserMapperTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.com.duogesi.controller.UserMapperTest" />
-      <module name="elogitics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.com.duogesi.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.49" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/elogitics_war/" />
+  <component name="RunManager">
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.100" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="elogitics:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/elogitics_war" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_elogitics" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_elogitics_8" />
       </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51191" />
+        <option name="DEBUG_PORT" value="53759" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -269,175 +500,416 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method v="2">
-        <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="elogitics:war" />
         </option>
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.UserMapperTest" />
-      <item itemvalue="Tomcat Server.tomcat" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.UserMapperTest" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <option name="contentProportion" value="0.113689095" />
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@5ee45ee7" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ad388af5-08bb-4ef8-b524-a3bcc37f11d2" name="Default Changelist" comment="" />
-      <created>1582194285410</created>
+      <changelist id="8beb0200-75c3-446f-9a52-8eb8d5849ed2" name="Default Changelist" comment="" />
+      <created>1583549465306</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1582194285410</updated>
-      <workItem from="1582194288441" duration="694000" />
-      <workItem from="1582699702947" duration="2629000" />
-      <workItem from="1582702697636" duration="7947000" />
-      <workItem from="1582968554945" duration="2052000" />
-      <workItem from="1583105302193" duration="27000" />
-      <workItem from="1583375743924" duration="1881000" />
-      <workItem from="1583378184282" duration="150000" />
-      <workItem from="1583380816965" duration="1379000" />
-      <workItem from="1583390136160" duration="1208000" />
-      <workItem from="1583391381215" duration="1781000" />
-      <workItem from="1583393203437" duration="1784000" />
-      <workItem from="1583395019168" duration="1781000" />
-      <workItem from="1583397006672" duration="1784000" />
-      <workItem from="1583400307359" duration="16000" />
-      <workItem from="1583401080557" duration="1298000" />
-      <workItem from="1583455976104" duration="1898000" />
-      <workItem from="1583458026631" duration="516000" />
+      <updated>1583549465306</updated>
+      <workItem from="1583549471766" duration="6851000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6851000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="9" width="1920" height="1047" extended-state="0" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="Web" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25215054" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" weight="0.32899022" />
+      <window_info anchor="bottom" id="Database Console" visible="true" weight="0.32894737" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32899022" />
+      <window_info anchor="bottom" id="Java Enterprise" weight="0.32899022" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33223686" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info active="true" anchor="right" id="Database" visible="true" weight="0.2467742" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="154" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583401535632">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="154" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1583401535632" />
-    <state x="488" y="56" key="#com.intellij.ide.util.MemberChooser" timestamp="1583391089664">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="488" y="56" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1583391089664" />
-    <state x="292" y="27" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1583391738804">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="292" y="27" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1366.728@0.0.1366.728" timestamp="1583391738804" />
-    <state x="463" y="64" key="FileChooserDialogImpl" timestamp="1583378330225">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="64" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583378330225" />
-    <state width="1145" height="189" key="GridCell.Tab.0.bottom" timestamp="1583457355012">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1145" height="189" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583457355012" />
-    <state width="1145" height="189" key="GridCell.Tab.0.center" timestamp="1583457355012">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1145" height="189" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583457355012" />
-    <state width="1145" height="189" key="GridCell.Tab.0.left" timestamp="1583457355012">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1145" height="189" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583457355012" />
-    <state width="1145" height="189" key="GridCell.Tab.0.right" timestamp="1583457355012">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1145" height="189" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583457355012" />
-    <state width="1145" height="189" key="GridCell.Tab.1.bottom" timestamp="1583457354927">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1145" height="189" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583457354927" />
-    <state width="1145" height="189" key="GridCell.Tab.1.center" timestamp="1583457354927">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1145" height="189" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583457354927" />
-    <state width="1145" height="189" key="GridCell.Tab.1.left" timestamp="1583457354927">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1145" height="189" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583457354927" />
-    <state width="1145" height="189" key="GridCell.Tab.1.right" timestamp="1583457354927">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1145" height="189" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583457354927" />
-    <state width="1145" height="189" key="GridCell.Tab.2.bottom" timestamp="1583457354927">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1145" height="189" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583457354927" />
-    <state width="1145" height="189" key="GridCell.Tab.2.center" timestamp="1583457354927">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1145" height="189" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1583457354927" />
-    <state width="1145" height="189" key="GridCell.Tab.2.left" timestamp="1583457354927">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1145" height="189" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1583457354927" />
-    <state width="1145" height="189" key="GridCell.Tab.2.right" timestamp="1583457354927">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1145" height="189" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1583457354927" />
-    <state x="323" y="66" key="NewModule_or_Project.wizard" timestamp="1583378332136">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="323" y="66" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1583378332136" />
-    <state x="467" y="193" width="431" height="338" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1583381529292">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="467" y="193" width="431" height="338" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1366.728@0.0.1366.728" timestamp="1583381529292" />
-    <state x="399" y="11" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1583390230425">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="399" y="11" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1583390230425" />
-    <state x="375" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1583458027266">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="375" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583458027266" />
-    <state x="393" y="15" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583376392344">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="393" y="15" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1583376392344" />
-    <state x="454" y="81" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1583390548027">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="454" y="81" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1583390548027" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583397453157">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1583397453157" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_includetax_kong.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="654" column="22" lean-forward="true" selection-start-line="233" selection-start-column="11" selection-end-line="654" selection-end-column="22" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57" />
+      </provider>
+    </entry>
+    <entry file="das://81855f0e-632c-4806-92f7-4870048e9782/schema/fba/table/price_include.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://81855f0e-632c-4806-92f7-4870048e9782/schema/fba/table/price_include">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://81855f0e-632c-4806-92f7-4870048e9782/schema/fba/table/price_noinclude">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/entities/huodai/price_include.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/entities/huodai/price_haika.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/mapper/priceMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/Aspect/update_price__haika_aspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="118" column="72" selection-start-line="118" selection-start-column="44" selection-end-line="118" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/mapper/ShipMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="211" column="19" lean-forward="true" selection-start-line="211" selection-start-column="19" selection-end-line="211" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://81855f0e-632c-4806-92f7-4870048e9782/schema/fba/table/schdule_details">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/entities/huodai/price.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_includetax_hai.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="193" column="17" selection-start-line="193" selection-start-column="17" selection-end-line="482" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#3607#3613#0#HTML" expanded="true" />
+            <element signature="e#3614#3620#0#HTML" expanded="true" />
+            <element signature="e#3620#3626#0#HTML" expanded="true" />
+            <element signature="e#3627#3633#0#HTML" expanded="true" />
+            <element signature="e#3633#3639#0#HTML" expanded="true" />
+            <element signature="e#3640#3646#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#form#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#tr#0;n#form#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#table#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#6695#6701#0#HTML" expanded="true" />
+            <element signature="e#6702#6708#0#HTML" expanded="true" />
+            <element signature="e#6708#6714#0#HTML" expanded="true" />
+            <element signature="e#6715#6721#0#HTML" expanded="true" />
+            <element signature="e#6721#6727#0#HTML" expanded="true" />
+            <element signature="e#6728#6734#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#table#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#form#0;n#table#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#tr#0;n#form#0;n#table#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_nottax.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="216" column="54" lean-forward="true" selection-start-line="216" selection-start-column="54" selection-end-line="216" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/mapper/ShipMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/entities/huodai/details.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/Mail/Mymail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3838">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/entities/huodai/copy_email.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/Aspect/Register_order_aspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="114" column="21" lean-forward="true" selection-start-line="108" selection-start-column="19" selection-end-line="114" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/service/Uploadservice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="72" column="50" selection-start-line="72" selection-start-column="50" selection-end-line="72" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/controller/Userservlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/service/Userservice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/Aspect/Update_status_aspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="131" column="19" selection-start-line="131" selection-start-column="19" selection-end-line="131" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/81855f0e-632c-4806-92f7-4870048e9782/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://81855f0e-632c-4806-92f7-4870048e9782/schema/fba/table/copy_email">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://81855f0e-632c-4806-92f7-4870048e9782/schema/fba/table/ship_schdule">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="46" column="65" selection-start-line="46" selection-start-column="65" selection-end-line="46" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/Aspect/received_order_aspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="112" column="46" selection-start-line="112" selection-start-column="46" selection-end-line="112" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://81855f0e-632c-4806-92f7-4870048e9782/schema/fba/table/subscriber_address">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://81855f0e-632c-4806-92f7-4870048e9782/schema/fba/table/orders_details">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://81855f0e-632c-4806-92f7-4870048e9782/schema/fba/table/orders">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/81855f0e-632c-4806-92f7-4870048e9782/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="42" selection-start-column="42" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/service/Huodaiservice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="420" selection-start-line="420" selection-end-line="420" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/Utils/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="176" selection-start-line="176" selection-end-line="176" />
+          <folding>
+            <element signature="e#4174#4175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/controller/options/Huodaiservlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="102" column="59" selection-start-line="102" selection-start-column="59" selection-end-line="102" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/entities/huodai/Ship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/huodai/insert_mission.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3496">
+          <caret line="225" column="86" selection-start-line="225" selection-start-column="86" selection-end-line="225" selection-end-column="86" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#STYLE#0;n#input#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#p#1;n#!!top" expanded="true" />
+            <element signature="e#1835#1990#0#HTML" />
+            <element signature="e#2016#2171#0#HTML" />
+            <element signature="e#2197#2352#0#HTML" />
+            <element signature="e#2378#2533#0#HTML" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6ad2957b-8b21-462c-8642-e23096b4d048/schema/fba/table/price_include">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6ad2957b-8b21-462c-8642-e23096b4d048/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6ad2957b-8b21-462c-8642-e23096b4d048/schema/fba/table/ship_schdule">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6ad2957b-8b21-462c-8642-e23096b4d048/schema/fba/table/price_noinclude">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>

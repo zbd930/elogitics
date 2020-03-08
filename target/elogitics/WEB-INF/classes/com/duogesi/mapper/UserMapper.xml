@@ -5,7 +5,6 @@
 <!-- namespace命名空间，唯一标识。一般指定为自定义的接口文件，下面相当于这个接口的实现类 -->
 <mapper namespace="com.duogesi.mapper.UserMapper">
      <!--引入自定义缓存类实现cache接口 -->
-    <!--<cache type="com.duogesi.cache.RedisCache"/>-->
     <!-- 定义结果集，column表示sql查询列,property表示映射到实体的属性 -->
     <resultMap type="com.duogesi.entities.User" id="my" >
         <id column="id" property="id"/>
@@ -35,12 +34,24 @@
             <update id="update_user" >
                 update user_info set password=#{password} where username=#{username}
             </update>
-    <!--获取发件人邮箱-->
-            <select id="get_emial" resultMap="address">
-                select s.*,c.email_address
-                from fba.subscriber_address as s,fba.copy_email as c
-                where s.id=#{id} and s.id=c.subscriber_id;
+            <!--获取抄送邮件是否为空-->
+            <select id="check_cc_if_null" resultType="com.duogesi.entities.huodai.copy_email">
+                select *
+                from copy_email
+                where subscriber_id=#{id}
             </select>
+            <!--获取发件人邮箱-->
+             <select id="get_emial" resultMap="address">
+                        select s.*,c.email_address
+                        from fba.subscriber_address as s,fba.copy_email as c
+                        where s.id=#{id} and s.id=c.subscriber_id
+             </select>
+            <!--获取发件人邮箱2-->
+            <select id="get_emial_no_cc" resultMap="address">
+                        select s.*
+                        from fba.subscriber_address as s
+                        where s.id=#{id}
+              </select>
 <!--        获取CC邮箱-->
             <select id="get_cc_email" resultType="com.duogesi.entities.huodai.copy_email">
                 select email_address

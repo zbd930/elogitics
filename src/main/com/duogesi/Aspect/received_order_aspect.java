@@ -107,7 +107,13 @@ public class received_order_aspect {
             System.out.println("The method " + methodName + " end.");
             StringBuilder stringBuilder=new StringBuilder();
             stringBuilder.append("您的订单" + numbers + " 已经货到仓库。<br>如有问题请及时联系客服，感谢您的使用！");
-            subscriber_address subscriber_address = userMapper.get_emial(address_id);
+            //判断有没有抄送邮件
+            subscriber_address subscriber_address =new subscriber_address();
+            if(userMapper.check_cc_if_null(address_id)!=null) {
+                subscriber_address=userMapper.get_emial(address_id);
+            }else {
+                subscriber_address=userMapper.get_emial_no_cc(address_id);
+            }
             try {
                 mymail.send(subscriber_address.getEmail(), String.valueOf(stringBuilder), "【您的货物状态更新了】",subscriber_address.getCcmails());
                 point.proceed();
@@ -133,7 +139,13 @@ public class received_order_aspect {
             //后置通知
             System.out.println("The method " + methodName + " end.");
             String context = "您的订单" + numbers + " 已经货到仓库。感谢您的关注";
-            subscriber_address subscriber_address = userMapper.get_emial(address_id);
+            //判断有没有抄送邮件
+            subscriber_address subscriber_address =new subscriber_address();
+            if(userMapper.check_cc_if_null(address_id)!=null) {
+                subscriber_address=userMapper.get_emial(address_id);
+            }else {
+                subscriber_address=userMapper.get_emial_no_cc(address_id);
+            }
             try {
                 mymail.send(subscriber_address.getEmail(), context, "【您的货物状态更新了】",subscriber_address.getCcmails());
             } catch (Exception e) {

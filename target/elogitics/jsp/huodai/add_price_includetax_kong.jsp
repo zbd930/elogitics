@@ -86,9 +86,9 @@
             </div>
             <ul id="layoutTarget" class="layout">
                 <li style="display: inline;cursor: pointer" onclick="swich1()"><strong>1. </strong>美线</li>
-<%--                <li style="display: inline;cursor: pointer" onclick="swich2()"><strong>2. </strong>加拿大线</li>--%>
-<%--                <li style="display: inline;cursor: pointer" onclick="swich3()"><strong>3. </strong>欧线</li>--%>
-<%--                <li style="display: inline;cursor: pointer" onclick="swich4()"><strong>4. </strong>日本线</li>--%>
+                <%--<li style="display: inline;cursor: pointer" onclick="swich2()"><strong>2. </strong>加拿大线</li>--%>
+                <%--<li style="display: inline;cursor: pointer" onclick="swich3()"><strong>3. </strong>欧线</li>--%>
+                <%--<li style="display: inline;cursor: pointer" onclick="swich4()"><strong>4. </strong>日本线</li>--%>
             </ul>
             <div class="middle" style="height: 600px;overflow: scroll" id="table1">
                 <table class="table">   空派&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="add1()"style="cursor: pointer;display: inline">添加价格</p>
@@ -231,428 +231,428 @@
                     </form>
                 </table>
             </div>
-<%--            <div class="middle" style="height: 600px;overflow: scroll" id="table2">--%>
-<%--                <table class="table">   空派&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="show('#Canada1')"style="cursor: pointer;display: inline">添加价格</p>--%>
-<%--                    <tr class="menu_tr" bgcolor="#CCFFFF">--%>
-<%--                        <td>地区</td>--%>
-<%--                        <td>方式</td>--%>
-<%--                        <td>100KG以下</td>--%>
-<%--                        <td>100KG-300KG</td>--%>
-<%--                        <td>300KG-500KG</td>--%>
-<%--                        <td>500KG-1000KG</td>--%>
-<%--                        <td>有效期起始</td>--%>
-<%--                        <td>有效期终止</td>--%>
-<%--                        <td>备注</td>--%>
-<%--                    </tr>--%>
-<%--                    <c:forEach items="${Canda_kongpai}" var="d">--%>
-<%--                        <tr >--%>
-<%--                            <td>${d.area}</td>--%>
-<%--                            <td>${d.way}</td>--%>
-<%--                            <td>${d.one}</td>--%>
-<%--                            <td>${d.three}</td>--%>
-<%--                            <td>${d.five}</td>--%>
-<%--                            <td>${d.ten}</td>--%>
-<%--                            <td>${d.valid_date_start}</td>--%>
-<%--                            <td>${d.valid_date_end}</td>--%>
-<%--                            <td><a onclick="return confirm('确认删除?')" href="<%=path%>/huodai/delete_price.do?id=${d.id}&&method=1">点击删除</a> </td>--%>
-<%--                        </tr>--%>
-<%--                    </c:forEach>--%>
-<%--                    <form action="<%=path%>/huodai/add_price.do"  method="post" >--%>
-<%--                        <tr bgcolor="#CCFFFF"  id="Canada1" style="display: none">--%>
-<%--                            <th><select name="area">--%>
-<%--                                <option value="YVR">温哥华</option>--%>
-<%--                                <option value="YYC">卡尔加里</option>--%>
-<%--                                <option value="YYZ">多伦多</option>--%>
-<%--                                <option value="YOW">渥太华</option>--%>
-<%--                            </select></th>--%>
-<%--                            <input type="text" name="country" value="Canada" style="display: none">--%>
-<%--                            <th><select name="way">--%>
-<%--                                <option value="0">空派</option>--%>
-<%--                            </select></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="one"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="three"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="five"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="ten"></th>--%>
-<%--                            <th><input type="date" name="valid_date_start"></th>--%>
-<%--                            <th><input type="date" name="valid_date_end"></th>--%>
-<%--                            <th><input type="submit" onclick="return confirm('确认提交?')"></th>--%>
-<%--                        </tr>--%>
-<%--                    </form>--%>
-<%--                </table>--%>
-<%--                <table class="table" >   空派(直飞）&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="show('#Canada2')"style="cursor: pointer;display: inline">添加价格</p>--%>
-<%--                    <tr class="menu_tr" bgcolor="#CCFFFF">--%>
-<%--                        <td>地区</td>--%>
-<%--                        <td>方式</td>--%>
-<%--                        <td>100KG以下</td>--%>
-<%--                        <td>100KG-300KG</td>--%>
-<%--                        <td>300KG-500KG</td>--%>
-<%--                        <td>500KG-1000KG</td>--%>
-<%--                        <td>有效期起始</td>--%>
-<%--                        <td>有效期终止</td>--%>
-<%--                        <td>备注</td>--%>
-<%--                    </tr>--%>
-<%--                    <c:forEach items="${Canda_direct}" var="d">--%>
-<%--                        <tr >--%>
-<%--                            <td>${d.area}</td>--%>
-<%--                            <td>${d.way}</td>--%>
-<%--                            <td>${d.one}</td>--%>
-<%--                            <td>${d.three}</td>--%>
-<%--                            <td>${d.five}</td>--%>
-<%--                            <td>${d.ten}</td>--%>
-<%--                            <td>${d.valid_date_start}</td>--%>
-<%--                            <td>${d.valid_date_end}</td>--%>
-<%--                            <td><a onclick="return confirm('确认删除?')" href="<%=path%>/huodai/delete_price.do?id=${d.id}&&method=1">点击删除</a> </td>--%>
-<%--                        </tr>--%>
-<%--                    </c:forEach>--%>
-<%--                    <form action="<%=path%>/huodai/add_price.do"  method="post" >--%>
-<%--                        <tr bgcolor="#CCFFFF"  id="Canada2" style="display: none">--%>
-<%--                            <th><select name="area">--%>
-<%--                                <option value="YVR">温哥华</option>--%>
-<%--                                <option value="YYC">卡尔加里</option>--%>
-<%--                                <option value="YYZ">多伦多</option>--%>
-<%--                                <option value="YOW">渥太华</option>--%>
-<%--                            </select></th>--%>
-<%--                            <th><select name="way">--%>
-<%--                                <option value="3">空派（直飞）</option>--%>
-<%--                            </select></th>--%>
-<%--                            <input type="text" name="country" value="Canada" style="display: none">--%>
+            <%--<div class="middle" style="height: 600px;overflow: scroll" id="table2">--%>
+                <%--<table class="table">   空派&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="show('#Canada1')"style="cursor: pointer;display: inline">添加价格</p>--%>
+                    <%--<tr class="menu_tr" bgcolor="#CCFFFF">--%>
+                        <%--<td>地区</td>--%>
+                        <%--<td>方式</td>--%>
+                        <%--<td>100KG以下</td>--%>
+                        <%--<td>100KG-300KG</td>--%>
+                        <%--<td>300KG-500KG</td>--%>
+                        <%--<td>500KG-1000KG</td>--%>
+                        <%--<td>有效期起始</td>--%>
+                        <%--<td>有效期终止</td>--%>
+                        <%--<td>备注</td>--%>
+                    <%--</tr>--%>
+                    <%--<c:forEach items="${Canda_kongpai}" var="d">--%>
+                        <%--<tr >--%>
+                            <%--<td>${d.area}</td>--%>
+                            <%--<td>${d.way}</td>--%>
+                            <%--<td>${d.one}</td>--%>
+                            <%--<td>${d.three}</td>--%>
+                            <%--<td>${d.five}</td>--%>
+                            <%--<td>${d.ten}</td>--%>
+                            <%--<td>${d.valid_date_start}</td>--%>
+                            <%--<td>${d.valid_date_end}</td>--%>
+                            <%--<td><a onclick="return confirm('确认删除?')" href="<%=path%>/huodai/delete_price.do?id=${d.id}&&method=1">点击删除</a> </td>--%>
+                        <%--</tr>--%>
+                    <%--</c:forEach>--%>
+                    <%--<form action="<%=path%>/huodai/add_price.do"  method="post" >--%>
+                        <%--<tr bgcolor="#CCFFFF"  id="Canada1" style="display: none">--%>
+                            <%--<th><select name="area">--%>
+                                <%--<option value="YVR">温哥华</option>--%>
+                                <%--<option value="YYC">卡尔加里</option>--%>
+                                <%--<option value="YYZ">多伦多</option>--%>
+                                <%--<option value="YOW">渥太华</option>--%>
+                            <%--</select></th>--%>
+                            <%--<input type="text" name="country" value="Canada" style="display: none">--%>
+                            <%--<th><select name="way">--%>
+                                <%--<option value="0">空派</option>--%>
+                            <%--</select></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="one"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="three"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="five"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="ten"></th>--%>
+                            <%--<th><input type="date" name="valid_date_start"></th>--%>
+                            <%--<th><input type="date" name="valid_date_end"></th>--%>
+                            <%--<th><input type="submit" onclick="return confirm('确认提交?')"></th>--%>
+                        <%--</tr>--%>
+                    <%--</form>--%>
+                <%--</table>--%>
+                <%--<table class="table" >   空派(直飞）&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="show('#Canada2')"style="cursor: pointer;display: inline">添加价格</p>--%>
+                    <%--<tr class="menu_tr" bgcolor="#CCFFFF">--%>
+                        <%--<td>地区</td>--%>
+                        <%--<td>方式</td>--%>
+                        <%--<td>100KG以下</td>--%>
+                        <%--<td>100KG-300KG</td>--%>
+                        <%--<td>300KG-500KG</td>--%>
+                        <%--<td>500KG-1000KG</td>--%>
+                        <%--<td>有效期起始</td>--%>
+                        <%--<td>有效期终止</td>--%>
+                        <%--<td>备注</td>--%>
+                    <%--</tr>--%>
+                    <%--<c:forEach items="${Canda_direct}" var="d">--%>
+                        <%--<tr >--%>
+                            <%--<td>${d.area}</td>--%>
+                            <%--<td>${d.way}</td>--%>
+                            <%--<td>${d.one}</td>--%>
+                            <%--<td>${d.three}</td>--%>
+                            <%--<td>${d.five}</td>--%>
+                            <%--<td>${d.ten}</td>--%>
+                            <%--<td>${d.valid_date_start}</td>--%>
+                            <%--<td>${d.valid_date_end}</td>--%>
+                            <%--<td><a onclick="return confirm('确认删除?')" href="<%=path%>/huodai/delete_price.do?id=${d.id}&&method=1">点击删除</a> </td>--%>
+                        <%--</tr>--%>
+                    <%--</c:forEach>--%>
+                    <%--<form action="<%=path%>/huodai/add_price.do"  method="post" >--%>
+                        <%--<tr bgcolor="#CCFFFF"  id="Canada2" style="display: none">--%>
+                            <%--<th><select name="area">--%>
+                                <%--<option value="YVR">温哥华</option>--%>
+                                <%--<option value="YYC">卡尔加里</option>--%>
+                                <%--<option value="YYZ">多伦多</option>--%>
+                                <%--<option value="YOW">渥太华</option>--%>
+                            <%--</select></th>--%>
+                            <%--<th><select name="way">--%>
+                                <%--<option value="3">空派（直飞）</option>--%>
+                            <%--</select></th>--%>
+                            <%--<input type="text" name="country" value="Canada" style="display: none">--%>
 
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="one"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="three"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="five"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="ten"></th>--%>
-<%--                            <th><input type="date" name="valid_date_start"></th>--%>
-<%--                            <th><input type="date" name="valid_date_end"></th>--%>
-<%--                            <th><input type="submit" onclick="return confirm('确认提交?')"></th>--%>
-<%--                        </tr>--%>
-<%--                    </form>--%>
-<%--                </table>--%>
-<%--                <table class="table">   空派(带电）&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="show('#Canada')"style="cursor: pointer;display: inline">添加价格</p>--%>
-<%--                    <tr class="menu_tr" bgcolor="#CCFFFF">--%>
-<%--                        <td>地区</td>--%>
-<%--                        <td>方式</td>--%>
-<%--                        <td>100KG以下</td>--%>
-<%--                        <td>100KG-300KG</td>--%>
-<%--                        <td>300KG-500KG</td>--%>
-<%--                        <td>500KG-1000KG</td>--%>
-<%--                        <td>有效期起始</td>--%>
-<%--                        <td>有效期终止</td>--%>
-<%--                        <td>备注</td>--%>
-<%--                    </tr>--%>
-<%--                    <c:forEach items="${Canda_mingan}" var="d">--%>
-<%--                        <tr >--%>
-<%--                            <td>${d.area}</td>--%>
-<%--                            <td>${d.way}</td>--%>
-<%--                            <td>${d.one}</td>--%>
-<%--                            <td>${d.three}</td>--%>
-<%--                            <td>${d.five}</td>--%>
-<%--                            <td>${d.ten}</td>--%>
-<%--                            <td>${d.valid_date_start}</td>--%>
-<%--                            <td>${d.valid_date_end}</td>--%>
-<%--                            <td><a onclick="return confirm('确认删除?')" href="<%=path%>/huodai/delete_price.do?id=${d.id}&&method=1">点击删除</a> </td>--%>
-<%--                        </tr>--%>
-<%--                    </c:forEach>--%>
-<%--                    <form action="<%=path%>/huodai/add_price.do"  method="post" >--%>
-<%--                        <tr bgcolor="#CCFFFF"  id="Canada" style="display: none">--%>
-<%--                            <th><select name="area">--%>
-<%--                                <option value="YVR">温哥华</option>--%>
-<%--                                <option value="YYC">卡尔加里</option>--%>
-<%--                                <option value="YYZ">多伦多</option>--%>
-<%--                                <option value="YOW">渥太华</option>--%>
-<%--                            </select></th>--%>
-<%--                            <th><select name="way">--%>
-<%--                                <option value="4">空派（敏感）</option>--%>
-<%--                            </select></th>--%>
-<%--                            <input type="text" name="country" value="Canada" style="display: none">--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="one"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="three"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="five"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="ten"></th>--%>
+                            <%--<th><input type="date" name="valid_date_start"></th>--%>
+                            <%--<th><input type="date" name="valid_date_end"></th>--%>
+                            <%--<th><input type="submit" onclick="return confirm('确认提交?')"></th>--%>
+                        <%--</tr>--%>
+                    <%--</form>--%>
+                <%--</table>--%>
+                <%--<table class="table">   空派(带电）&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="show('#Canada')"style="cursor: pointer;display: inline">添加价格</p>--%>
+                    <%--<tr class="menu_tr" bgcolor="#CCFFFF">--%>
+                        <%--<td>地区</td>--%>
+                        <%--<td>方式</td>--%>
+                        <%--<td>100KG以下</td>--%>
+                        <%--<td>100KG-300KG</td>--%>
+                        <%--<td>300KG-500KG</td>--%>
+                        <%--<td>500KG-1000KG</td>--%>
+                        <%--<td>有效期起始</td>--%>
+                        <%--<td>有效期终止</td>--%>
+                        <%--<td>备注</td>--%>
+                    <%--</tr>--%>
+                    <%--<c:forEach items="${Canda_mingan}" var="d">--%>
+                        <%--<tr >--%>
+                            <%--<td>${d.area}</td>--%>
+                            <%--<td>${d.way}</td>--%>
+                            <%--<td>${d.one}</td>--%>
+                            <%--<td>${d.three}</td>--%>
+                            <%--<td>${d.five}</td>--%>
+                            <%--<td>${d.ten}</td>--%>
+                            <%--<td>${d.valid_date_start}</td>--%>
+                            <%--<td>${d.valid_date_end}</td>--%>
+                            <%--<td><a onclick="return confirm('确认删除?')" href="<%=path%>/huodai/delete_price.do?id=${d.id}&&method=1">点击删除</a> </td>--%>
+                        <%--</tr>--%>
+                    <%--</c:forEach>--%>
+                    <%--<form action="<%=path%>/huodai/add_price.do"  method="post" >--%>
+                        <%--<tr bgcolor="#CCFFFF"  id="Canada" style="display: none">--%>
+                            <%--<th><select name="area">--%>
+                                <%--<option value="YVR">温哥华</option>--%>
+                                <%--<option value="YYC">卡尔加里</option>--%>
+                                <%--<option value="YYZ">多伦多</option>--%>
+                                <%--<option value="YOW">渥太华</option>--%>
+                            <%--</select></th>--%>
+                            <%--<th><select name="way">--%>
+                                <%--<option value="4">空派（敏感）</option>--%>
+                            <%--</select></th>--%>
+                            <%--<input type="text" name="country" value="Canada" style="display: none">--%>
 
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="one"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="three"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="five"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="ten"></th>--%>
-<%--                            <th><input type="date" name="valid_date_start"></th>--%>
-<%--                            <th><input type="date" name="valid_date_end"></th>--%>
-<%--                            <th><input type="submit" onclick="return confirm('确认提交?')"></th>--%>
-<%--                        </tr>--%>
-<%--                    </form>--%>
-<%--                </table>--%>
-<%--            </div >--%>
-<%--            <div class="middle" style="height: 600px;overflow: scroll" id="table3">--%>
-<%--                欧线<br>--%>
-<%--                <table class="table">   空派&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="show('#Eurpor1')"style="cursor: pointer;display: inline">添加价格</p>--%>
-<%--                    <tr class="menu_tr" bgcolor="#CCFFFF">--%>
-<%--                        <td>地区</td>--%>
-<%--                        <td>方式</td>--%>
-<%--                        <td>100KG以下</td>--%>
-<%--                        <td>100KG-300KG</td>--%>
-<%--                        <td>300KG-500KG</td>--%>
-<%--                        <td>500KG-1000KG</td>--%>
-<%--                        <td>有效期起始</td>--%>
-<%--                        <td>有效期终止</td>--%>
-<%--                        <td>备注</td>--%>
-<%--                    </tr>--%>
-<%--                    <c:forEach items="${Eurpor_kongpai}" var="d">--%>
-<%--                        <tr >--%>
-<%--                            <td>${d.area}</td>--%>
-<%--                            <td>${d.way}</td>--%>
-<%--                            <td>${d.one}</td>--%>
-<%--                            <td>${d.three}</td>--%>
-<%--                            <td>${d.five}</td>--%>
-<%--                            <td>${d.ten}</td>--%>
-<%--                            <td>${d.valid_date_start}</td>--%>
-<%--                            <td>${d.valid_date_end}</td>--%>
-<%--                            <td><a onclick="return confirm('确认删除?')" href="<%=path%>/huodai/delete_price.do?id=${d.id}&&method=1">点击删除</a> </td>--%>
-<%--                        </tr>--%>
-<%--                    </c:forEach>--%>
-<%--                    <form action="<%=path%>/huodai/add_price.do"  method="post" >--%>
-<%--                        <tr bgcolor="#CCFFFF"  id="Eurpor1" style="display: none">--%>
-<%--                            <th><select name="area">--%>
-<%--                                <option value="zone1">一号地区</option>--%>
-<%--                                <option value="zone2">二号地区</option>--%>
-<%--                                <option value="zone3">三号地区</option>--%>
-<%--                            </select></th>--%>
-<%--                            <th><select name="way">--%>
-<%--                                <option value="0">空派</option>--%>
-<%--                            </select></th>--%>
-<%--                            <input type="text" name="country" value="Eurpor" style="display: none">--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="one"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="three"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="five"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="ten"></th>--%>
-<%--                            <th><input type="date" name="valid_date_start"></th>--%>
-<%--                            <th><input type="date" name="valid_date_end"></th>--%>
-<%--                            <th><input type="submit" onclick="return confirm('确认提交?')"></th>--%>
-<%--                        </tr>--%>
-<%--                    </form>--%>
-<%--                </table>--%>
-<%--                <table class="table" >   空派(直飞）&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="show('#Eurpor2')"style="cursor: pointer;display: inline">添加价格</p>--%>
-<%--                    <tr class="menu_tr" bgcolor="#CCFFFF">--%>
-<%--                        <td>地区</td>--%>
-<%--                        <td>方式</td>--%>
-<%--                        <td>100KG以下</td>--%>
-<%--                        <td>100KG-300KG</td>--%>
-<%--                        <td>300KG-500KG</td>--%>
-<%--                        <td>500KG-1000KG</td>--%>
-<%--                        <td>有效期起始</td>--%>
-<%--                        <td>有效期终止</td>--%>
-<%--                        <td>备注</td>--%>
-<%--                    </tr>--%>
-<%--                    <c:forEach items="${Eurpor_direct}" var="d">--%>
-<%--                        <tr >--%>
-<%--                            <td>${d.area}</td>--%>
-<%--                            <td>${d.way}</td>--%>
-<%--                            <td>${d.one}</td>--%>
-<%--                            <td>${d.three}</td>--%>
-<%--                            <td>${d.five}</td>--%>
-<%--                            <td>${d.ten}</td>--%>
-<%--                            <td>${d.valid_date_start}</td>--%>
-<%--                            <td>${d.valid_date_end}</td>--%>
-<%--                            <td><a onclick="return confirm('确认删除?')" href="<%=path%>/huodai/delete_price.do?id=${d.id}&&method=1">点击删除</a> </td>--%>
-<%--                        </tr>--%>
-<%--                    </c:forEach>--%>
-<%--                    <form action="<%=path%>/huodai/add_price.do"  method="post" >--%>
-<%--                        <tr bgcolor="#CCFFFF"  id="Eurpor2" style="display: none">--%>
-<%--                            <th><select name="area">--%>
-<%--                                <option value="zone1">一号地区</option>--%>
-<%--                                <option value="zone2">二号地区</option>--%>
-<%--                                <option value="zone3">三号地区</option>--%>
-<%--                            </select></th>--%>
-<%--                            <th><select name="way">--%>
-<%--                                <option value="3">空派（直飞）</option>--%>
-<%--                            </select></th>--%>
-<%--                            <input type="text" name="country" value="Eurpor" style="display: none">--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="one"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="three"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="five"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="ten"></th>--%>
+                            <%--<th><input type="date" name="valid_date_start"></th>--%>
+                            <%--<th><input type="date" name="valid_date_end"></th>--%>
+                            <%--<th><input type="submit" onclick="return confirm('确认提交?')"></th>--%>
+                        <%--</tr>--%>
+                    <%--</form>--%>
+                <%--</table>--%>
+            <%--</div >--%>
+            <%--<div class="middle" style="height: 600px;overflow: scroll" id="table3">--%>
+                <%--欧线<br>--%>
+                <%--<table class="table">   空派&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="show('#Eurpor1')"style="cursor: pointer;display: inline">添加价格</p>--%>
+                    <%--<tr class="menu_tr" bgcolor="#CCFFFF">--%>
+                        <%--<td>地区</td>--%>
+                        <%--<td>方式</td>--%>
+                        <%--<td>100KG以下</td>--%>
+                        <%--<td>100KG-300KG</td>--%>
+                        <%--<td>300KG-500KG</td>--%>
+                        <%--<td>500KG-1000KG</td>--%>
+                        <%--<td>有效期起始</td>--%>
+                        <%--<td>有效期终止</td>--%>
+                        <%--<td>备注</td>--%>
+                    <%--</tr>--%>
+                    <%--<c:forEach items="${Eurpor_kongpai}" var="d">--%>
+                        <%--<tr >--%>
+                            <%--<td>${d.area}</td>--%>
+                            <%--<td>${d.way}</td>--%>
+                            <%--<td>${d.one}</td>--%>
+                            <%--<td>${d.three}</td>--%>
+                            <%--<td>${d.five}</td>--%>
+                            <%--<td>${d.ten}</td>--%>
+                            <%--<td>${d.valid_date_start}</td>--%>
+                            <%--<td>${d.valid_date_end}</td>--%>
+                            <%--<td><a onclick="return confirm('确认删除?')" href="<%=path%>/huodai/delete_price.do?id=${d.id}&&method=1">点击删除</a> </td>--%>
+                        <%--</tr>--%>
+                    <%--</c:forEach>--%>
+                    <%--<form action="<%=path%>/huodai/add_price.do"  method="post" >--%>
+                        <%--<tr bgcolor="#CCFFFF"  id="Eurpor1" style="display: none">--%>
+                            <%--<th><select name="area">--%>
+                                <%--<option value="zone1">一号地区</option>--%>
+                                <%--<option value="zone2">二号地区</option>--%>
+                                <%--<option value="zone3">三号地区</option>--%>
+                            <%--</select></th>--%>
+                            <%--<th><select name="way">--%>
+                                <%--<option value="0">空派</option>--%>
+                            <%--</select></th>--%>
+                            <%--<input type="text" name="country" value="Eurpor" style="display: none">--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="one"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="three"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="five"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="ten"></th>--%>
+                            <%--<th><input type="date" name="valid_date_start"></th>--%>
+                            <%--<th><input type="date" name="valid_date_end"></th>--%>
+                            <%--<th><input type="submit" onclick="return confirm('确认提交?')"></th>--%>
+                        <%--</tr>--%>
+                    <%--</form>--%>
+                <%--</table>--%>
+                <%--<table class="table" >   空派(直飞）&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="show('#Eurpor2')"style="cursor: pointer;display: inline">添加价格</p>--%>
+                    <%--<tr class="menu_tr" bgcolor="#CCFFFF">--%>
+                        <%--<td>地区</td>--%>
+                        <%--<td>方式</td>--%>
+                        <%--<td>100KG以下</td>--%>
+                        <%--<td>100KG-300KG</td>--%>
+                        <%--<td>300KG-500KG</td>--%>
+                        <%--<td>500KG-1000KG</td>--%>
+                        <%--<td>有效期起始</td>--%>
+                        <%--<td>有效期终止</td>--%>
+                        <%--<td>备注</td>--%>
+                    <%--</tr>--%>
+                    <%--<c:forEach items="${Eurpor_direct}" var="d">--%>
+                        <%--<tr >--%>
+                            <%--<td>${d.area}</td>--%>
+                            <%--<td>${d.way}</td>--%>
+                            <%--<td>${d.one}</td>--%>
+                            <%--<td>${d.three}</td>--%>
+                            <%--<td>${d.five}</td>--%>
+                            <%--<td>${d.ten}</td>--%>
+                            <%--<td>${d.valid_date_start}</td>--%>
+                            <%--<td>${d.valid_date_end}</td>--%>
+                            <%--<td><a onclick="return confirm('确认删除?')" href="<%=path%>/huodai/delete_price.do?id=${d.id}&&method=1">点击删除</a> </td>--%>
+                        <%--</tr>--%>
+                    <%--</c:forEach>--%>
+                    <%--<form action="<%=path%>/huodai/add_price.do"  method="post" >--%>
+                        <%--<tr bgcolor="#CCFFFF"  id="Eurpor2" style="display: none">--%>
+                            <%--<th><select name="area">--%>
+                                <%--<option value="zone1">一号地区</option>--%>
+                                <%--<option value="zone2">二号地区</option>--%>
+                                <%--<option value="zone3">三号地区</option>--%>
+                            <%--</select></th>--%>
+                            <%--<th><select name="way">--%>
+                                <%--<option value="3">空派（直飞）</option>--%>
+                            <%--</select></th>--%>
+                            <%--<input type="text" name="country" value="Eurpor" style="display: none">--%>
 
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="one"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="three"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="five"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="ten"></th>--%>
-<%--                            <th><input type="date" name="valid_date_start"></th>--%>
-<%--                            <th><input type="date" name="valid_date_end"></th>--%>
-<%--                            <th><input type="submit" onclick="return confirm('确认提交?')"></th>--%>
-<%--                        </tr>--%>
-<%--                    </form>--%>
-<%--                </table>--%>
-<%--                <table class="table">   空派(带电）&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="show('#Eurpor')"style="cursor: pointer;display: inline">添加价格</p>--%>
-<%--                    <tr class="menu_tr" bgcolor="#CCFFFF">--%>
-<%--                        <td>地区</td>--%>
-<%--                        <td>方式</td>--%>
-<%--                        <td>100KG以下</td>--%>
-<%--                        <td>100KG-300KG</td>--%>
-<%--                        <td>300KG-500KG</td>--%>
-<%--                        <td>500KG-1000KG</td>--%>
-<%--                        <td>有效期起始</td>--%>
-<%--                        <td>有效期终止</td>--%>
-<%--                        <td>备注</td>--%>
-<%--                    </tr>--%>
-<%--                    <c:forEach items="${Eurpor_mingan}" var="d">--%>
-<%--                        <tr >--%>
-<%--                            <td>${d.area}</td>--%>
-<%--                            <td>${d.way}</td>--%>
-<%--                            <td>${d.one}</td>--%>
-<%--                            <td>${d.three}</td>--%>
-<%--                            <td>${d.five}</td>--%>
-<%--                            <td>${d.ten}</td>--%>
-<%--                            <td>${d.valid_date_start}</td>--%>
-<%--                            <td>${d.valid_date_end}</td>--%>
-<%--                            <td><a onclick="return confirm('确认删除?')" href="<%=path%>/huodai/delete_price.do?id=${d.id}&&method=1">点击删除</a> </td>--%>
-<%--                        </tr>--%>
-<%--                    </c:forEach>--%>
-<%--                    <form action="<%=path%>/huodai/add_price.do"  method="post" >--%>
-<%--                        <tr bgcolor="#CCFFFF"  id="Eurpor" style="display: none">--%>
-<%--                            <th><select name="area">--%>
-<%--                                <option value="zone1">一号地区</option>--%>
-<%--                                <option value="zone2">二号地区</option>--%>
-<%--                                <option value="zone3">三号地区</option>--%>
-<%--                            </select></th>--%>
-<%--                            <th><select name="way">--%>
-<%--                                <option value="4">空派（敏感）</option>--%>
-<%--                            </select></th>--%>
-<%--                            <input type="text" name="country" value="Eurpor" style="display: none">--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="one"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="three"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="five"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="ten"></th>--%>
-<%--                            <th><input type="date" name="valid_date_start"></th>--%>
-<%--                            <th><input type="date" name="valid_date_end"></th>--%>
-<%--                            <th><input type="submit" onclick="return confirm('确认提交?')"></th>--%>
-<%--                        </tr>--%>
-<%--                    </form>--%>
-<%--                </table>--%>
-<%--            </div>--%>
-<%--            <div class="middle" style="height: 600px;overflow: scroll" id="table4">--%>
-<%--                <table class="table">   空派&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="show('#Japan1')"style="cursor: pointer;display: inline">添加价格</p>--%>
-<%--                    <tr class="menu_tr" bgcolor="#CCFFFF">--%>
-<%--                        <td>地区</td>--%>
-<%--                        <td>方式</td>--%>
-<%--                        <td>100KG以下</td>--%>
-<%--                        <td>100KG-300KG</td>--%>
-<%--                        <td>300KG-500KG</td>--%>
-<%--                        <td>500KG-1000KG</td>--%>
-<%--                        <td>有效期起始</td>--%>
-<%--                        <td>有效期终止</td>--%>
-<%--                        <td>备注</td>--%>
-<%--                    </tr>--%>
-<%--                    <c:forEach items="${Japan_kongpai}" var="d">--%>
-<%--                        <tr >--%>
-<%--                            <td>${d.area}</td>--%>
-<%--                            <td>${d.way}</td>--%>
-<%--                            <td>${d.one}</td>--%>
-<%--                            <td>${d.three}</td>--%>
-<%--                            <td>${d.five}</td>--%>
-<%--                            <td>${d.ten}</td>--%>
-<%--                            <td>${d.valid_date_start}</td>--%>
-<%--                            <td>${d.valid_date_end}</td>--%>
-<%--                            <td><a onclick="return confirm('确认删除?')" href="<%=path%>/huodai/delete_price.do?id=${d.id}&&method=1">点击删除</a> </td>--%>
-<%--                        </tr>--%>
-<%--                    </c:forEach>--%>
-<%--                    <form action="<%=path%>/huodai/add_price.do"  method="post" >--%>
-<%--                        <tr bgcolor="#CCFFFF"  id="Japan1" style="display: none">--%>
-<%--                            <th><select name="area">--%>
-<%--                                <option value="Japan">日本</option>--%>
-<%--                            </select></th>--%>
-<%--                            <th><select name="way">--%>
-<%--                                <option value="0">空派</option>--%>
-<%--                            </select></th>--%>
-<%--                            <input type="text" name="country" value="Japan" style="display: none">--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="one"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="three"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="five"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="ten"></th>--%>
-<%--                            <th><input type="date" name="valid_date_start"></th>--%>
-<%--                            <th><input type="date" name="valid_date_end"></th>--%>
-<%--                            <th><input type="submit" onclick="return confirm('确认提交?')"></th>--%>
-<%--                        </tr>--%>
-<%--                    </form>--%>
-<%--                </table>--%>
-<%--                <table class="table" >   空派(直飞）&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="show('#Japan2')"style="cursor: pointer;display: inline">添加价格</p>--%>
-<%--                    <tr class="menu_tr" bgcolor="#CCFFFF">--%>
-<%--                        <td>地区</td>--%>
-<%--                        <td>方式</td>--%>
-<%--                        <td>100KG以下</td>--%>
-<%--                        <td>100KG-300KG</td>--%>
-<%--                        <td>300KG-500KG</td>--%>
-<%--                        <td>500KG-1000KG</td>--%>
-<%--                        <td>有效期起始</td>--%>
-<%--                        <td>有效期终止</td>--%>
-<%--                        <td>备注</td>--%>
-<%--                    </tr>--%>
-<%--                    <c:forEach items="${Japan_direct}" var="d">--%>
-<%--                        <tr >--%>
-<%--                            <td>${d.area}</td>--%>
-<%--                            <td>${d.way}</td>--%>
-<%--                            <td>${d.one}</td>--%>
-<%--                            <td>${d.three}</td>--%>
-<%--                            <td>${d.five}</td>--%>
-<%--                            <td>${d.ten}</td>--%>
-<%--                            <td>${d.valid_date_start}</td>--%>
-<%--                            <td>${d.valid_date_end}</td>--%>
-<%--                            <td><a onclick="return confirm('确认删除?')" href="<%=path%>/huodai/delete_price.do?id=${d.id}&&method=1">点击删除</a> </td>--%>
-<%--                        </tr>--%>
-<%--                    </c:forEach>--%>
-<%--                    <form action="<%=path%>/huodai/add_price.do"  method="post" >--%>
-<%--                        <tr bgcolor="#CCFFFF"  id="Japan2" style="display: none">--%>
-<%--                            <th><select name="area">--%>
-<%--                                <option value="Japan">日本</option>--%>
-<%--                            </select></th>--%>
-<%--                            <th><select name="way">--%>
-<%--                                <option value="3">空派（直飞）</option>--%>
-<%--                            </select></th>--%>
-<%--                            <input type="text" name="country" value="Japan" style="display: none">--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="one"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="three"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="five"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="ten"></th>--%>
-<%--                            <th><input type="date" name="valid_date_start"></th>--%>
-<%--                            <th><input type="date" name="valid_date_end"></th>--%>
-<%--                            <th><input type="submit" onclick="return confirm('确认提交?')"></th>--%>
-<%--                        </tr>--%>
-<%--                    </form>--%>
-<%--                </table>--%>
-<%--                <table class="table">   空派(带电）&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="show('#Japan')"style="cursor: pointer;display: inline">添加价格</p>--%>
-<%--                    <tr class="menu_tr" bgcolor="#CCFFFF">--%>
-<%--                        <td>地区</td>--%>
-<%--                        <td>方式</td>--%>
-<%--                        <td>100KG以下</td>--%>
-<%--                        <td>100KG-300KG</td>--%>
-<%--                        <td>300KG-500KG</td>--%>
-<%--                        <td>500KG-1000KG</td>--%>
-<%--                        <td>有效期起始</td>--%>
-<%--                        <td>有效期终止</td>--%>
-<%--                        <td>备注</td>--%>
-<%--                    </tr>--%>
-<%--                    <c:forEach items="${Japan_mingan}" var="d">--%>
-<%--                        <tr >--%>
-<%--                            <td>${d.area}</td>--%>
-<%--                            <td>${d.way}</td>--%>
-<%--                            <td>${d.one}</td>--%>
-<%--                            <td>${d.three}</td>--%>
-<%--                            <td>${d.five}</td>--%>
-<%--                            <td>${d.ten}</td>--%>
-<%--                            <td>${d.valid_date_start}</td>--%>
-<%--                            <td>${d.valid_date_end}</td>--%>
-<%--                            <td><a onclick="return confirm('确认删除?')" href="<%=path%>/huodai/delete_price.do?id=${d.id}&&method=1">点击删除</a> </td>--%>
-<%--                        </tr>--%>
-<%--                    </c:forEach>--%>
-<%--                    <form action="<%=path%>/huodai/add_price.do"  method="post" >--%>
-<%--                        <tr bgcolor="#CCFFFF"  id="Japan" style="display: none">--%>
-<%--                            <th><select name="area">--%>
-<%--                                <option value="Japan">日本</option>--%>
-<%--                            </select></th>--%>
-<%--                            <th><select name="way">--%>
-<%--                                <option value="4">空派（敏感）</option>--%>
-<%--                            </select></th>--%>
-<%--                            <input type="text" name="country" value="Japan" style="display: none">--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="one"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="three"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="five"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="ten"></th>--%>
+                            <%--<th><input type="date" name="valid_date_start"></th>--%>
+                            <%--<th><input type="date" name="valid_date_end"></th>--%>
+                            <%--<th><input type="submit" onclick="return confirm('确认提交?')"></th>--%>
+                        <%--</tr>--%>
+                    <%--</form>--%>
+                <%--</table>--%>
+                <%--<table class="table">   空派(带电）&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="show('#Eurpor')"style="cursor: pointer;display: inline">添加价格</p>--%>
+                    <%--<tr class="menu_tr" bgcolor="#CCFFFF">--%>
+                        <%--<td>地区</td>--%>
+                        <%--<td>方式</td>--%>
+                        <%--<td>100KG以下</td>--%>
+                        <%--<td>100KG-300KG</td>--%>
+                        <%--<td>300KG-500KG</td>--%>
+                        <%--<td>500KG-1000KG</td>--%>
+                        <%--<td>有效期起始</td>--%>
+                        <%--<td>有效期终止</td>--%>
+                        <%--<td>备注</td>--%>
+                    <%--</tr>--%>
+                    <%--<c:forEach items="${Eurpor_mingan}" var="d">--%>
+                        <%--<tr >--%>
+                            <%--<td>${d.area}</td>--%>
+                            <%--<td>${d.way}</td>--%>
+                            <%--<td>${d.one}</td>--%>
+                            <%--<td>${d.three}</td>--%>
+                            <%--<td>${d.five}</td>--%>
+                            <%--<td>${d.ten}</td>--%>
+                            <%--<td>${d.valid_date_start}</td>--%>
+                            <%--<td>${d.valid_date_end}</td>--%>
+                            <%--<td><a onclick="return confirm('确认删除?')" href="<%=path%>/huodai/delete_price.do?id=${d.id}&&method=1">点击删除</a> </td>--%>
+                        <%--</tr>--%>
+                    <%--</c:forEach>--%>
+                    <%--<form action="<%=path%>/huodai/add_price.do"  method="post" >--%>
+                        <%--<tr bgcolor="#CCFFFF"  id="Eurpor" style="display: none">--%>
+                            <%--<th><select name="area">--%>
+                                <%--<option value="zone1">一号地区</option>--%>
+                                <%--<option value="zone2">二号地区</option>--%>
+                                <%--<option value="zone3">三号地区</option>--%>
+                            <%--</select></th>--%>
+                            <%--<th><select name="way">--%>
+                                <%--<option value="4">空派（敏感）</option>--%>
+                            <%--</select></th>--%>
+                            <%--<input type="text" name="country" value="Eurpor" style="display: none">--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="one"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="three"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="five"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="ten"></th>--%>
+                            <%--<th><input type="date" name="valid_date_start"></th>--%>
+                            <%--<th><input type="date" name="valid_date_end"></th>--%>
+                            <%--<th><input type="submit" onclick="return confirm('确认提交?')"></th>--%>
+                        <%--</tr>--%>
+                    <%--</form>--%>
+                <%--</table>--%>
+            <%--</div>--%>
+            <%--<div class="middle" style="height: 600px;overflow: scroll" id="table4">--%>
+                <%--<table class="table">   空派&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="show('#Japan1')"style="cursor: pointer;display: inline">添加价格</p>--%>
+                    <%--<tr class="menu_tr" bgcolor="#CCFFFF">--%>
+                        <%--<td>地区</td>--%>
+                        <%--<td>方式</td>--%>
+                        <%--<td>100KG以下</td>--%>
+                        <%--<td>100KG-300KG</td>--%>
+                        <%--<td>300KG-500KG</td>--%>
+                        <%--<td>500KG-1000KG</td>--%>
+                        <%--<td>有效期起始</td>--%>
+                        <%--<td>有效期终止</td>--%>
+                        <%--<td>备注</td>--%>
+                    <%--</tr>--%>
+                    <%--<c:forEach items="${Japan_kongpai}" var="d">--%>
+                        <%--<tr >--%>
+                            <%--<td>${d.area}</td>--%>
+                            <%--<td>${d.way}</td>--%>
+                            <%--<td>${d.one}</td>--%>
+                            <%--<td>${d.three}</td>--%>
+                            <%--<td>${d.five}</td>--%>
+                            <%--<td>${d.ten}</td>--%>
+                            <%--<td>${d.valid_date_start}</td>--%>
+                            <%--<td>${d.valid_date_end}</td>--%>
+                            <%--<td><a onclick="return confirm('确认删除?')" href="<%=path%>/huodai/delete_price.do?id=${d.id}&&method=1">点击删除</a> </td>--%>
+                        <%--</tr>--%>
+                    <%--</c:forEach>--%>
+                    <%--<form action="<%=path%>/huodai/add_price.do"  method="post" >--%>
+                        <%--<tr bgcolor="#CCFFFF"  id="Japan1" style="display: none">--%>
+                            <%--<th><select name="area">--%>
+                                <%--<option value="Japan">日本</option>--%>
+                            <%--</select></th>--%>
+                            <%--<th><select name="way">--%>
+                                <%--<option value="0">空派</option>--%>
+                            <%--</select></th>--%>
+                            <%--<input type="text" name="country" value="Japan" style="display: none">--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="one"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="three"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="five"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="ten"></th>--%>
+                            <%--<th><input type="date" name="valid_date_start"></th>--%>
+                            <%--<th><input type="date" name="valid_date_end"></th>--%>
+                            <%--<th><input type="submit" onclick="return confirm('确认提交?')"></th>--%>
+                        <%--</tr>--%>
+                    <%--</form>--%>
+                <%--</table>--%>
+                <%--<table class="table" >   空派(直飞）&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="show('#Japan2')"style="cursor: pointer;display: inline">添加价格</p>--%>
+                    <%--<tr class="menu_tr" bgcolor="#CCFFFF">--%>
+                        <%--<td>地区</td>--%>
+                        <%--<td>方式</td>--%>
+                        <%--<td>100KG以下</td>--%>
+                        <%--<td>100KG-300KG</td>--%>
+                        <%--<td>300KG-500KG</td>--%>
+                        <%--<td>500KG-1000KG</td>--%>
+                        <%--<td>有效期起始</td>--%>
+                        <%--<td>有效期终止</td>--%>
+                        <%--<td>备注</td>--%>
+                    <%--</tr>--%>
+                    <%--<c:forEach items="${Japan_direct}" var="d">--%>
+                        <%--<tr >--%>
+                            <%--<td>${d.area}</td>--%>
+                            <%--<td>${d.way}</td>--%>
+                            <%--<td>${d.one}</td>--%>
+                            <%--<td>${d.three}</td>--%>
+                            <%--<td>${d.five}</td>--%>
+                            <%--<td>${d.ten}</td>--%>
+                            <%--<td>${d.valid_date_start}</td>--%>
+                            <%--<td>${d.valid_date_end}</td>--%>
+                            <%--<td><a onclick="return confirm('确认删除?')" href="<%=path%>/huodai/delete_price.do?id=${d.id}&&method=1">点击删除</a> </td>--%>
+                        <%--</tr>--%>
+                    <%--</c:forEach>--%>
+                    <%--<form action="<%=path%>/huodai/add_price.do"  method="post" >--%>
+                        <%--<tr bgcolor="#CCFFFF"  id="Japan2" style="display: none">--%>
+                            <%--<th><select name="area">--%>
+                                <%--<option value="Japan">日本</option>--%>
+                            <%--</select></th>--%>
+                            <%--<th><select name="way">--%>
+                                <%--<option value="3">空派（直飞）</option>--%>
+                            <%--</select></th>--%>
+                            <%--<input type="text" name="country" value="Japan" style="display: none">--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="one"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="three"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="five"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="ten"></th>--%>
+                            <%--<th><input type="date" name="valid_date_start"></th>--%>
+                            <%--<th><input type="date" name="valid_date_end"></th>--%>
+                            <%--<th><input type="submit" onclick="return confirm('确认提交?')"></th>--%>
+                        <%--</tr>--%>
+                    <%--</form>--%>
+                <%--</table>--%>
+                <%--<table class="table">   空派(带电）&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <p onclick="show('#Japan')"style="cursor: pointer;display: inline">添加价格</p>--%>
+                    <%--<tr class="menu_tr" bgcolor="#CCFFFF">--%>
+                        <%--<td>地区</td>--%>
+                        <%--<td>方式</td>--%>
+                        <%--<td>100KG以下</td>--%>
+                        <%--<td>100KG-300KG</td>--%>
+                        <%--<td>300KG-500KG</td>--%>
+                        <%--<td>500KG-1000KG</td>--%>
+                        <%--<td>有效期起始</td>--%>
+                        <%--<td>有效期终止</td>--%>
+                        <%--<td>备注</td>--%>
+                    <%--</tr>--%>
+                    <%--<c:forEach items="${Japan_mingan}" var="d">--%>
+                        <%--<tr >--%>
+                            <%--<td>${d.area}</td>--%>
+                            <%--<td>${d.way}</td>--%>
+                            <%--<td>${d.one}</td>--%>
+                            <%--<td>${d.three}</td>--%>
+                            <%--<td>${d.five}</td>--%>
+                            <%--<td>${d.ten}</td>--%>
+                            <%--<td>${d.valid_date_start}</td>--%>
+                            <%--<td>${d.valid_date_end}</td>--%>
+                            <%--<td><a onclick="return confirm('确认删除?')" href="<%=path%>/huodai/delete_price.do?id=${d.id}&&method=1">点击删除</a> </td>--%>
+                        <%--</tr>--%>
+                    <%--</c:forEach>--%>
+                    <%--<form action="<%=path%>/huodai/add_price.do"  method="post" >--%>
+                        <%--<tr bgcolor="#CCFFFF"  id="Japan" style="display: none">--%>
+                            <%--<th><select name="area">--%>
+                                <%--<option value="Japan">日本</option>--%>
+                            <%--</select></th>--%>
+                            <%--<th><select name="way">--%>
+                                <%--<option value="4">空派（敏感）</option>--%>
+                            <%--</select></th>--%>
+                            <%--<input type="text" name="country" value="Japan" style="display: none">--%>
 
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="one"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="three"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="five"></th>--%>
-<%--                            <th><input max = "40"  min = "1"  step = "0.1" type="number" name="ten"></th>--%>
-<%--                            <th><input type="date" name="valid_date_start"></th>--%>
-<%--                            <th><input type="date" name="valid_date_end"></th>--%>
-<%--                            <th><input type="submit" onclick="return confirm('确认提交?')"></th>--%>
-<%--                        </tr>--%>
-<%--                    </form>--%>
-<%--                </table>--%>
-<%--            </div>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="one"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="three"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="five"></th>--%>
+                            <%--<th><input max = "40"  min = "1"  step = "0.1" type="number" name="ten"></th>--%>
+                            <%--<th><input type="date" name="valid_date_start"></th>--%>
+                            <%--<th><input type="date" name="valid_date_end"></th>--%>
+                            <%--<th><input type="submit" onclick="return confirm('确认提交?')"></th>--%>
+                        <%--</tr>--%>
+                    <%--</form>--%>
+                <%--</table>--%>
+            <%--</div>--%>
           </div>
 </body>
 </html>

@@ -107,7 +107,14 @@ public class Update_status_aspect {
             int[] statu=new int[orders.size()];
             String[] numbers=new String[orders.size()];
             for (int i = 0; i < orders.size(); i++) {
-                subscriber_address subscriber_address=userMapper.get_emial(orders.get(i).getAddress_id());
+                int address_id=orders.get(i).getAddress_id();
+                //判断有没有抄送邮件
+                subscriber_address subscriber_address =new subscriber_address();
+                if(userMapper.check_cc_if_null(address_id)!=null) {
+                    subscriber_address=userMapper.get_emial(address_id);
+                }else {
+                    subscriber_address=userMapper.get_emial_no_cc(address_id);
+                }
                 //获取对应的邮件
                 emails[i] = subscriber_address.getEmail();
                 subscriber_id[i]=subscriber_address.getId();
@@ -173,7 +180,14 @@ public class Update_status_aspect {
                 int[] statu=new int[orders.size()];
                 String[] numbers=new String[orders.size()];
                 for (int i = 0; i < orders.size(); i++) {
-                    subscriber_address subscriber_address=userMapper.get_emial(orders.get(i).getAddress_id());
+                    int address_id=orders.get(i).getAddress_id();
+                    //判断有没有抄送邮件
+                    subscriber_address subscriber_address =new subscriber_address();
+                    if(userMapper.check_cc_if_null(address_id)!=null) {
+                        subscriber_address=userMapper.get_emial(address_id);
+                    }else {
+                        subscriber_address=userMapper.get_emial_no_cc(address_id);
+                    }
                     //获取对应的邮件
                     emails[i] = subscriber_address.getEmail();
                     subscriber_id[i]=subscriber_address.getId();
@@ -240,7 +254,14 @@ public class Update_status_aspect {
                         int[] statu=new int[orders.size()];
                         String[] numbers=new String[orders.size()];
                         for (int i = 0; i < orders.size(); i++) {
-                            subscriber_address subscriber_address=userMapper.get_emial(orders.get(i).getAddress_id());
+                            int address_id=orders.get(i).getAddress_id();
+                            //判断有没有抄送邮件
+                            subscriber_address subscriber_address =new subscriber_address();
+                            if(userMapper.check_cc_if_null(address_id)!=null) {
+                                subscriber_address=userMapper.get_emial(address_id);
+                            }else {
+                                subscriber_address=userMapper.get_emial_no_cc(address_id);
+                            }
                             //获取对应的邮件
                             emails[i] = subscriber_address.getEmail();
                             subscriber_id[i]=subscriber_address.getId();

@@ -31,7 +31,13 @@ public class Uploadservice {
         String filename = image.getOriginalFilename();//获取上传时的文件名称
         System.out.println(filename);
         if (filename==null||filename.equals("")) {
-            subscriber_address subscriber_address=userMapper.get_emial(address_id);
+            //判断有没有抄送邮件
+            subscriber_address subscriber_address =new subscriber_address();
+            if(userMapper.check_cc_if_null(address_id)!=null) {
+                subscriber_address=userMapper.get_emial(address_id);
+            }else {
+                subscriber_address=userMapper.get_emial_no_cc(address_id);
+            }
             String email = subscriber_address.getEmail();
             //获取抄送的邮件
             List<copy_email> cc=userMapper.get_cc_email(subscriber_address.getId());
@@ -61,7 +67,14 @@ public class Uploadservice {
             filename = UUID.randomUUID().toString() + "&numbers=" + numbers + "." + FilenameUtils.getExtension(filename);//创建一个新的文件名称    getExtension(name):获取文件后缀名
             //存储税单
             if (copy(image, realPath, filename)) {
-                String email = userMapper.get_emial(address_id).getEmail();
+                //判断有没有抄送邮件
+                subscriber_address subscriber_address =new subscriber_address();
+                if(userMapper.check_cc_if_null(address_id)!=null) {
+                    subscriber_address=userMapper.get_emial(address_id);
+                }else {
+                    subscriber_address=userMapper.get_emial_no_cc(address_id);
+                }
+                String email = subscriber_address.getEmail();
                 StringBuilder neirong = new StringBuilder();
                 neirong.append("您的货物：" + numbers + "。更新其他费用如下：<br/>报关费：" + customer + ",关税：" + tax + ",杂费" + inspect + ",明细如下：" + mycontext + "<br/>如有疑问请在改票货物收到的第一封税单确认邮件收到后的3个自然日内向客服提出，过期将默认。");
                 try {

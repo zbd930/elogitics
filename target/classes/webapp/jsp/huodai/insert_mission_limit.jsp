@@ -107,9 +107,9 @@
                     <p style="display: inline">出发时间:<input name="cut_end" type="date" class="insert_input" STYLE="width: 150px"> </p>
                     <p><input type="checkbox"  onclick="checkboxOnclick(this)">慢必赔</p>
                     <div id="set" >
-<%--                        <input id="set1" name="compensate" value="0" style="display: none">--%>
-<%--                        <p style="display: inline-block">赔付时间： <input id="dead_date" name="dead_date" type="date"  class="insert_input" STYLE="width: 140px;margin-left:10px"></p>--%>
-<%--                        <p style="display: inline-block">金额单价：<input id="money" name="money" type="number" style="width: 140px;"  placeholder="公斤或立方"> </p>--%>
+                        <input id="set1" name="compensate" value="0" style="display: none">
+                        <p style="display: inline-block">赔付时间： <input id="dead_date" name="dead_date" type="date"  class="insert_input" STYLE="width: 140px;margin-left:10px"></p>
+                        <p style="display: inline-block">金额单价：<input id="money" name="money" type="number" style="width: 140px;"  placeholder="公斤或立方"> </p>
                     </div>
                     <button type="submit" class="add_submit" onclick="sendAuthMessage();" >提交</button>
                 </div>

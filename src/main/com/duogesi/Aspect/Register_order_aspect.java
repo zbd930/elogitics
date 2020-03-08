@@ -106,8 +106,13 @@ public class Register_order_aspect {
                     car car = vehicleMapper.get_car_byid(car_id);
                     //获取司机
                     driver driver = vehicleMapper.get_driver_byid(driver_id);
-                    //获取地址
-                    subscriber_address address=userMapper.get_emial(address_id);
+                    //判断有没有抄送邮件
+                    subscriber_address address =new subscriber_address();
+                    if(userMapper.check_cc_if_null(address_id)!=null) {
+                        address=userMapper.get_emial(address_id);
+                    }else {
+                        address=userMapper.get_emial_no_cc(address_id);
+                    }
                     StringBuilder stringBuilder=new StringBuilder();
                     stringBuilder.append("您的订单号:"+numbers+"已被接受。<br> 收货司机名称是"+driver.getName()+"; 电话是"+driver.getPhone()+"; 车牌号是"+car.getCar_number()+";<br>后续进程将会以邮件通知，请记得查收。");
             try {

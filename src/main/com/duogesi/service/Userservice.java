@@ -22,6 +22,13 @@ public class Userservice {
     }
 
     public subscriber_address getaddress(int id){
-        return userMapper.get_emial(id);
+        //判断有没有抄送邮件
+        subscriber_address subscriber_address =new subscriber_address();
+        if(userMapper.check_cc_if_null(id)!=null) {
+            subscriber_address=userMapper.get_emial(id);
+        }else {
+            subscriber_address=userMapper.get_emial_no_cc(id);
+        }
+        return subscriber_address;
     }
 }
