@@ -8,30 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ad388af5-08bb-4ef8-b524-a3bcc37f11d2" name="Default Changelist" comment="'1.5.5'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/duogesi/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/duogesi/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/add_price_includetax_hai.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/add_price_includetax_hai.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/add_price_includetax_kong.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/add_price_includetax_kong.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/add_price_nottax.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/add_price_nottax.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/insert_mission.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/insert_mission.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/insert_mission_limit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/jsp/huodai/insert_mission_limit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/addition.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/addition.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/elogitics.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/com/duogesi/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/add_price_includetax_hai.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/add_price_includetax_hai.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/add_price_includetax_kong.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/add_price_includetax_kong.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/add_price_nottax.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/add_price_nottax.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/insert_mission.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/insert_mission.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/insert_mission_limit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/classes/webapp/jsp/huodai/insert_mission_limit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/jsp/huodai/add_price_includetax_hai.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/jsp/huodai/add_price_includetax_hai.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/jsp/huodai/add_price_includetax_kong.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/jsp/huodai/add_price_includetax_kong.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/jsp/huodai/add_price_nottax.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/jsp/huodai/add_price_nottax.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/jsp/huodai/insert_mission.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/jsp/huodai/insert_mission.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/elogitics/jsp/huodai/insert_mission_limit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/elogitics/jsp/huodai/insert_mission_limit.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,6 +225,11 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
             </expand>
             <select />
           </treeState>
@@ -294,6 +277,11 @@
       <workItem from="1583906698579" duration="1776000" />
       <workItem from="1583908552347" duration="1561000" />
       <workItem from="1583910226233" duration="76000" />
+      <workItem from="1583911360910" duration="641000" />
+      <workItem from="1583994932337" duration="1630000" />
+      <workItem from="1583996667684" duration="233000" />
+      <workItem from="1584061520499" duration="30000" />
+      <workItem from="1584062017658" duration="83000" />
     </task>
     <servers />
   </component>
@@ -329,54 +317,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="64" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583906881828" />
-    <state width="1145" height="182" key="GridCell.Tab.0.bottom" timestamp="1583910115008">
+    <state width="1145" height="182" key="GridCell.Tab.0.bottom" timestamp="1584062103517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1145" height="182" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583910115008" />
-    <state width="1145" height="182" key="GridCell.Tab.0.center" timestamp="1583910115008">
+    <state width="1145" height="182" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.0.center" timestamp="1584062103517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1145" height="182" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583910115008" />
-    <state width="1145" height="182" key="GridCell.Tab.0.left" timestamp="1583910115007">
+    <state width="1145" height="182" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.0.left" timestamp="1584062103517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1145" height="182" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583910115007" />
-    <state width="1145" height="182" key="GridCell.Tab.0.right" timestamp="1583910115008">
+    <state width="1145" height="182" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.0.right" timestamp="1584062103517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1145" height="182" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583910115008" />
-    <state width="1145" height="182" key="GridCell.Tab.1.bottom" timestamp="1583910115009">
+    <state width="1145" height="182" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.1.bottom" timestamp="1584062103517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1145" height="182" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583910115009" />
-    <state width="1145" height="182" key="GridCell.Tab.1.center" timestamp="1583910115009">
+    <state width="1145" height="182" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.1.center" timestamp="1584062103517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1145" height="182" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583910115009" />
-    <state width="1145" height="182" key="GridCell.Tab.1.left" timestamp="1583910115008">
+    <state width="1145" height="182" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.1.left" timestamp="1584062103517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1145" height="182" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583910115008" />
-    <state width="1145" height="182" key="GridCell.Tab.1.right" timestamp="1583910115009">
+    <state width="1145" height="182" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.1.right" timestamp="1584062103517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1145" height="182" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583910115009" />
-    <state width="1145" height="182" key="GridCell.Tab.2.bottom" timestamp="1583910115009">
+    <state width="1145" height="182" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.2.bottom" timestamp="1584062103517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1145" height="182" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583910115009" />
-    <state width="1145" height="182" key="GridCell.Tab.2.center" timestamp="1583910115009">
+    <state width="1145" height="182" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.2.center" timestamp="1584062103517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1145" height="182" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1583910115009" />
-    <state width="1145" height="182" key="GridCell.Tab.2.left" timestamp="1583910115009">
+    <state width="1145" height="182" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.2.left" timestamp="1584062103517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1145" height="182" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1583910115009" />
-    <state width="1145" height="182" key="GridCell.Tab.2.right" timestamp="1583910115009">
+    <state width="1145" height="182" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.2.right" timestamp="1584062103517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1145" height="182" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1583910115009" />
+    <state width="1145" height="182" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
     <state width="1145" height="182" key="GridCell.Tab.3.bottom" timestamp="1583897011399">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -409,10 +397,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="399" y="11" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1583390230425" />
-    <state x="375" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1583910226277">
+    <state x="375" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1584062015750">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="375" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583910226277" />
+    <state x="375" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584062015750" />
     <state x="393" y="15" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583376392344">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
