@@ -114,7 +114,7 @@
                     <td>${o.statu}</td>
                     <td>${o.order_details.beizhu}</td>
                     <td>${o.order_details.ups}</td>
-                    <td><a href = "JavaScript:void(0)" onclick = "openDialog(${o.id})">修改UPS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href = "JavaScript:void(0)" onclick = "openDialog1(${o.id},'${o.subscriber_address.email}','${o.numbers}','${o.subscriber_address.id}')">更新数据</a></td>
+                    <td><a href = "JavaScript:void(0)" onclick = "openDialog(${o.id})">修改UPS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href = "JavaScript:void(0)" onclick = "openDialog1(${o.id},'${o.subscriber_address.email}','${o.numbers}','${o.address_id}')">更新数据</a></td>
                     <td><a href="<%=path%>/huodai/data.do?id=${o.id}&&numbers=${o.numbers}&&address_id=${o.address_id}&&dest=${o.dest}">查看资料</a> </td>
                     </tr>
                 </c:forEach>

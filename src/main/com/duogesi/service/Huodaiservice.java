@@ -365,6 +365,8 @@ public class Huodaiservice {
             //动态获取上传文件夹的路径
             ServletContext context = req.getServletContext();
             String realPath = context.getRealPath("/rucang/");//获取本地存储位置的绝对路径
+            //获取抄送的邮件
+            List<copy_email> cc=userMapper.get_cc_email(subscriber_id);
             if (!image[0].isEmpty()) {
                 for (int i = 0; i < image.length; i++) {
                     //获取到上传的文件数据
@@ -381,7 +383,7 @@ public class Huodaiservice {
                     copy(image[i], realPath, filename);
                 }
                 try {
-                    mymail.sendMail2(path, email, String.valueOf(s), "【数据确认】",filenames);
+                    mymail.sendMail2(path, email, String.valueOf(s), "【数据确认】",filenames,cc);
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {
@@ -395,8 +397,6 @@ public class Huodaiservice {
                 }
             } else {
                 try {
-                    //获取抄送的邮件
-                    List<copy_email> cc=userMapper.get_cc_email(subscriber_id);
                     mymail.send(email, String.valueOf(s), "【数据确认】",cc);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -508,7 +508,7 @@ public class Huodaiservice {
                     timer.cancel();
                 }
             }
-        },180000);//24小时 86400000
+        },86400000);//24小时 86400000
 
     }
 

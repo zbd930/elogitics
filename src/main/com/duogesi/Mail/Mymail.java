@@ -114,7 +114,7 @@ public class Mymail {
 
 
     //多个附件
-    public void sendMail2(String[] realPath,String receiveMailAccount,String context,String subject,String[] filenames)throws Exception{
+    public void sendMail2(String[] realPath,String receiveMailAccount,String context,String subject,String[] filenames,List<copy_email> ccemail)throws Exception{
         System.out.println("sendMailServlet-----start3");
         //1.创建邮件对象
         Properties prop = new Properties();
@@ -127,14 +127,20 @@ public class Mymail {
         prop.setProperty("mail.smtp.auth", "true");
         Session session = Session.getInstance(prop);
         MimeMessage message =new MimeMessage(session);
+        message.setRecipient(Message.RecipientType.TO, new InternetAddress(receiveMailAccount, "发货人", "utf-8"));
 
         /*2.设置发件人
          * 其中 InternetAddress 的三个参数分别为: 邮箱, 显示的昵称(只用于显示, 没有特别的要求), 昵称的字符集编码
          * */
         message.setFrom(new InternetAddress("jemmy_ywt@163.com", "Shenzhen Yiwutong ", "utf-8"));
         // 代表收件人
-        message.setRecipient(Message.RecipientType.TO, new InternetAddress(receiveMailAccount, "发货人", "utf-8"));
-
+        if (!ccemail.isEmpty()) {
+            InternetAddress[] internetAddresses = new InternetAddress[ccemail.size()];
+            for (int i = 0; i < ccemail.size(); i++) {
+                internetAddresses[i] = new InternetAddress(ccemail.get(i).getEmail_address(), "Shenzhen Yiwutong", "UTF-8");
+            }
+            message.setRecipients(MimeMessage.RecipientType.CC, internetAddresses);
+        }
         /*4.设置标题*/
         message.setSubject(subject,"UTF-8");
         //message.setContent("Test Content:这是一封测试邮件...","text/html;charset=UTF-8");
@@ -179,7 +185,7 @@ public class Mymail {
     }
 
     //更新数据
-    public void sendMail3(String realPath,String receiveMailAccount,String context,String subject,String filename)throws Exception{
+    public void sendMail3(String realPath,String receiveMailAccount,String context,String subject,String filename,List<copy_email> ccemail)throws Exception{
 
         System.out.println("sendMailServlet-----start3");
 
@@ -195,12 +201,22 @@ public class Mymail {
         Session session = Session.getInstance(prop);
         MimeMessage message =new MimeMessage(session);
 
+
         /*2.设置发件人
          * 其中 InternetAddress 的三个参数分别为: 邮箱, 显示的昵称(只用于显示, 没有特别的要求), 昵称的字符集编码
          * */
+        message.setRecipient(Message.RecipientType.TO, new InternetAddress(receiveMailAccount, "发货人", "utf-8"));
+
         message.setFrom(new InternetAddress("jemmy_ywt@163.com", "Shenzhen Yiwutong", "utf-8"));
         // 代表收件人
-        message.setRecipient(Message.RecipientType.TO, new InternetAddress(receiveMailAccount, "发货人", "utf-8"));
+        // 代表收件人
+        if (!ccemail.isEmpty()) {
+            InternetAddress[] internetAddresses = new InternetAddress[ccemail.size()];
+            for (int i = 0; i < ccemail.size(); i++) {
+                internetAddresses[i] = new InternetAddress(ccemail.get(i).getEmail_address(), "Shenzhen Yiwutong", "UTF-8");
+            }
+            message.setRecipients(MimeMessage.RecipientType.CC, internetAddresses);
+        }
 
 
         /*4.设置标题*/

@@ -30,17 +30,18 @@ public class Uploadservice {
         //先判断是否有附件
         String filename = image.getOriginalFilename();//获取上传时的文件名称
         System.out.println(filename);
+        //判断有没有抄送邮件
+        subscriber_address subscriber_address =new subscriber_address();
+        if(userMapper.check_cc_if_null(address_id)!=null) {
+            subscriber_address=userMapper.get_emial(address_id);
+        }else {
+            subscriber_address=userMapper.get_emial_no_cc(address_id);
+        }
+        String email = subscriber_address.getEmail();
+        //获取抄送的邮件
+        List<copy_email> cc=userMapper.get_cc_email(subscriber_address.getId());
         if (filename==null||filename.equals("")) {
-            //判断有没有抄送邮件
-            subscriber_address subscriber_address =new subscriber_address();
-            if(userMapper.check_cc_if_null(address_id)!=null) {
-                subscriber_address=userMapper.get_emial(address_id);
-            }else {
-                subscriber_address=userMapper.get_emial_no_cc(address_id);
-            }
-            String email = subscriber_address.getEmail();
-            //获取抄送的邮件
-            List<copy_email> cc=userMapper.get_cc_email(subscriber_address.getId());
+
             StringBuilder neirong = new StringBuilder();
             neirong.append("您的货物：" + numbers + " 。更新其他费用如下：<br/>报关费：" + customer + ",关税：" + tax + ",杂费" + inspect + ",明细如下：" + mycontext + "<br/>如有疑问请在改票货物收到的第一封税单确认邮件收到后的3个自然日内向客服提出，过期将默认。");
             try {
@@ -64,25 +65,17 @@ public class Uploadservice {
             //动态获取上传文件夹的路径
             ServletContext context = req.getServletContext();
             String realPath = context.getRealPath("/upload/");//获取本地存储位置的绝对路径
-            filename = UUID.randomUUID().toString() + "&numbers=" + numbers + "." + FilenameUtils.getExtension(filename);//创建一个新的文件名称    getExtension(name):获取文件后缀名
+            filename= numbers + "." + FilenameUtils.getExtension(filename);//创建一个新的文件名称    getExtension(name):获取文件后缀名
+            //获取抄送的邮件
             //存储税单
             if (copy(image, realPath, filename)) {
-                //判断有没有抄送邮件
-                subscriber_address subscriber_address =new subscriber_address();
-                if(userMapper.check_cc_if_null(address_id)!=null) {
-                    subscriber_address=userMapper.get_emial(address_id);
-                }else {
-                    subscriber_address=userMapper.get_emial_no_cc(address_id);
-                }
-                String email = subscriber_address.getEmail();
                 StringBuilder neirong = new StringBuilder();
                 neirong.append("您的货物：" + numbers + "。更新其他费用如下：<br/>报关费：" + customer + ",关税：" + tax + ",杂费" + inspect + ",明细如下：" + mycontext + "<br/>如有疑问请在改票货物收到的第一封税单确认邮件收到后的3个自然日内向客服提出，过期将默认。");
                 try {
                     //将杂费保存数据库
                     amountMapper.updata_local(tax, customer, inspect, id);
                     //发送邮件
-                    mymail.sendMail3(realPath + "/" + filename, email, String.valueOf(neirong), "【杂费确认】",filename);
-
+                    mymail.sendMail3(realPath + "/" + filename, email, String.valueOf(neirong), "【杂费确认】",filename,cc);
                 } catch (Exception e) {
                     e.printStackTrace();
                     return false;

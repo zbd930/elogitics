@@ -7,6 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8beb0200-75c3-446f-9a52-8eb8d5849ed2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/com/duogesi/Filter/sessionFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
@@ -26,6 +27,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_includetax_hai.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_includetax_hai.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_includetax_kong.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_includetax_kong.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_nottax.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_nottax.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/addition.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/addition.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/details.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/insert_mission.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/huodai/insert_mission.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/duogesi/controller/options/Huodaiservlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duogesi/controller/options/Huodaiservlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/duogesi/mapper/priceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duogesi/mapper/priceMapper.xml" afterDir="false" />
@@ -78,17 +81,6 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="fba@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="fba@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="fba: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="fba@yikuajing.cn" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
@@ -109,18 +101,19 @@
     <session id="1718101966">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="copy_email" value="2" />
-          <entry key="java" value="25" />
-          <entry key="jsp" value="7" />
-          <entry key="orders" value="1" />
-          <entry key="orders_details" value="1" />
+          <entry key="amount" value="1" />
+          <entry key="copy_email" value="3" />
+          <entry key="java" value="34" />
+          <entry key="jsp" value="8" />
+          <entry key="orders" value="3" />
+          <entry key="orders_details" value="2" />
           <entry key="price_include" value="2" />
           <entry key="price_noinclude" value="2" />
           <entry key="properties" value="2" />
@@ -128,24 +121,24 @@
           <entry key="ship_schdule" value="5" />
           <entry key="sql" value="6" />
           <entry key="subscriber_address" value="1" />
-          <entry key="xml" value="4" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="15" />
-          <entry key="JAVA" value="25" />
-          <entry key="JSP" value="7" />
+          <entry key="Database Element" value="20" />
+          <entry key="JAVA" value="34" />
+          <entry key="JSP" value="8" />
           <entry key="Properties" value="2" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="5" />
-          <entry key="XML" value="4" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="61" />
-          <entry key="java" value="112" />
+          <entry key="cell" value="63" />
+          <entry key="java" value="114" />
           <entry key="jsp" value="21" />
           <entry key="properties" value="72" />
           <entry key="sql" value="109" />
@@ -155,12 +148,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="112" />
+          <entry key="JAVA" value="114" />
           <entry key="JSP" value="21" />
           <entry key="PLAIN_TEXT" value="10" />
           <entry key="Properties" value="72" />
           <entry key="SQL" value="56" />
-          <entry key="Scratch" value="124" />
+          <entry key="Scratch" value="126" />
           <entry key="XML" value="146" />
         </counts>
       </usages-collector>
@@ -169,102 +162,59 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/huodai/insert_mission.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/service/Userservice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3496">
-              <caret line="225" column="86" selection-start-line="225" selection-start-column="86" selection-end-line="225" selection-end-column="86" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#STYLE#0;n#input#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#p#1;n#!!top" expanded="true" />
-                <element signature="e#1835#1990#0#HTML" />
-                <element signature="e#2016#2171#0#HTML" />
-                <element signature="e#2197#2352#0#HTML" />
-                <element signature="e#2378#2533#0#HTML" />
-                <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="95">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resource/jdbc.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/mapper/UserMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6ad2957b-8b21-462c-8642-e23096b4d048/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://6ad2957b-8b21-462c-8642-e23096b4d048/schema/fba/table/price_include">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+            <state relative-caret-position="285">
+              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="das://6ad2957b-8b21-462c-8642-e23096b4d048/schema/fba/table/price_noinclude">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://6ad2957b-8b21-462c-8642-e23096b4d048/schema/fba/table/ship_schdule">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/entities/huodai/Ship.java">
+        <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/service/Huodaiservice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+            <state relative-caret-position="404">
+              <caret line="385" column="27" selection-start-line="385" selection-start-column="27" selection-end-line="385" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/controller/options/Huodaiservlet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/Mail/Mymail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="102" column="59" selection-start-line="102" selection-start-column="59" selection-end-line="102" selection-end-column="59" />
+            <state relative-caret-position="442">
+              <caret line="116" column="22" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/Utils/RedisUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/service/Uploadservice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="176" selection-start-line="176" selection-end-line="176" />
-              <folding>
-                <element signature="e#4174#4175#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="113">
+              <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -291,7 +241,6 @@
         <option value="$PROJECT_DIR$/src/main/com/duogesi/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/com/duogesi/Aspect/received_order_aspect.java" />
         <option value="$PROJECT_DIR$/src/main/com/duogesi/Aspect/Register_order_aspect.java" />
-        <option value="$PROJECT_DIR$/src/main/com/duogesi/service/Uploadservice.java" />
         <option value="$PROJECT_DIR$/src/main/com/duogesi/service/Userservice.java" />
         <option value="$PROJECT_DIR$/src/main/com/duogesi/Aspect/Update_status_aspect.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/81855f0e-632c-4806-92f7-4870048e9782/console_1.sql" />
@@ -300,6 +249,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/huodai/insert_mission.jsp" />
         <option value="$PROJECT_DIR$/src/main/resource/jdbc.properties" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6ad2957b-8b21-462c-8642-e23096b4d048/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/com/duogesi/Filter/sessionFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/huodai/details.jsp" />
+        <option value="$PROJECT_DIR$/src/main/com/duogesi/service/Uploadservice.java" />
       </list>
     </option>
   </component>
@@ -332,7 +284,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="9" />
     <option name="width" value="1920" />
@@ -344,10 +296,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="CatdeaLogs" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="CatdeaLogs" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -378,31 +330,48 @@
               <item name="elogitics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="duogesi" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elogitics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elogitics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="duogesi" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="options" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elogitics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elogitics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="duogesi" type="462c0819:PsiDirectoryNode" />
+              <item name="Filter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elogitics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elogitics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="duogesi" type="462c0819:PsiDirectoryNode" />
+              <item name="Mail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elogitics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elogitics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="duogesi" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elogitics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elogitics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="elogitics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="elogitics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="elogitics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="elogitics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="elogitics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="elogitics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="huodai" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -414,11 +383,17 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583557218348" />
-    <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../php/php.exe" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584535272202" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="E:/apache-tomcat-8.5.49" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15161557" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunDashboard">
@@ -506,6 +481,29 @@
       </method>
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.113689095" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -515,34 +513,60 @@
       <created>1583549465306</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583549465306</updated>
+      <updated>1582194285410</updated>
       <workItem from="1583549471766" duration="6851000" />
+      <workItem from="1582194288441" duration="694000" />
+      <workItem from="1582699702947" duration="2629000" />
+      <workItem from="1582702697636" duration="7947000" />
+      <workItem from="1582968554945" duration="2052000" />
+      <workItem from="1583105302193" duration="27000" />
+      <workItem from="1583375743924" duration="1881000" />
+      <workItem from="1583378184282" duration="150000" />
+      <workItem from="1583380816965" duration="1379000" />
+      <workItem from="1583390136160" duration="1208000" />
+      <workItem from="1583391381215" duration="1781000" />
+      <workItem from="1583393203437" duration="1784000" />
+      <workItem from="1583395019168" duration="1781000" />
+      <workItem from="1583397006672" duration="1784000" />
+      <workItem from="1583400307359" duration="16000" />
+      <workItem from="1583401080557" duration="1298000" />
+      <workItem from="1583455976104" duration="1898000" />
+      <workItem from="1583458026631" duration="516000" />
+      <workItem from="1583458957426" duration="22000" />
+      <workItem from="1583468852492" duration="8000" />
+      <workItem from="1583475393000" duration="342000" />
+      <workItem from="1583478807066" duration="446000" />
+      <workItem from="1583738395856" duration="732000" />
+      <workItem from="1583740494414" duration="10000" />
+      <workItem from="1583890089159" duration="443000" />
+      <workItem from="1583893561150" duration="1396000" />
+      <workItem from="1583895754058" duration="1783000" />
+      <workItem from="1583897905110" duration="1113000" />
+      <workItem from="1583906698579" duration="1776000" />
+      <workItem from="1583908552347" duration="1561000" />
+      <workItem from="1583910226233" duration="76000" />
+      <workItem from="1583911360910" duration="641000" />
+      <workItem from="1583994932337" duration="1630000" />
+      <workItem from="1583996667684" duration="233000" />
+      <workItem from="1584061520499" duration="30000" />
+      <workItem from="1584062017658" duration="83000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6851000" />
+    <option name="totallyTimeSpent" value="9025000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="9" width="1920" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25215054" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Application Servers" weight="0.32899022" />
-      <window_info anchor="bottom" id="Database Console" visible="true" weight="0.32894737" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32899022" />
-      <window_info anchor="bottom" id="Java Enterprise" weight="0.32899022" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33223686" />
@@ -550,15 +574,24 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info active="true" anchor="right" id="Database" visible="true" weight="0.2467742" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32899022" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Database Console" order="9" weight="0.32894737" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32899022" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.21908316" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -567,23 +600,133 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="'1.5.5'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'1.5.5'" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="154" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583401535632">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="154" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1583401535632" />
+    <state x="488" y="56" key="#com.intellij.ide.util.MemberChooser" timestamp="1583896028334">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="56" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1583896028334" />
+    <state x="292" y="27" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1583391738804">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="292" y="27" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1366.728@0.0.1366.728" timestamp="1583391738804" />
+    <state x="295" y="0" key="CommitChangelistDialog2" timestamp="1583909614010">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="295" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583909614010" />
+    <state x="437" y="81" key="DetectedRootsChooserDialog" timestamp="1583906884383">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="437" y="81" key="DetectedRootsChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1583906884383" />
+    <state x="463" y="64" key="FileChooserDialogImpl" timestamp="1583906881828">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="64" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583906881828" />
+    <state width="1145" height="182" key="GridCell.Tab.0.bottom" timestamp="1584062103517">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1145" height="182" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.0.center" timestamp="1584062103517">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1145" height="182" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.0.left" timestamp="1584062103517">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1145" height="182" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.0.right" timestamp="1584062103517">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1145" height="182" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.1.bottom" timestamp="1584062103517">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1145" height="182" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.1.center" timestamp="1584062103517">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1145" height="182" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.1.left" timestamp="1584062103517">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1145" height="182" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.1.right" timestamp="1584062103517">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1145" height="182" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.2.bottom" timestamp="1584062103517">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1145" height="182" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.2.center" timestamp="1584062103517">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1145" height="182" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.2.left" timestamp="1584062103517">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1145" height="182" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.2.right" timestamp="1584062103517">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1145" height="182" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1584062103517" />
+    <state width="1145" height="182" key="GridCell.Tab.3.bottom" timestamp="1583897011399">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1145" height="182" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583897011399" />
+    <state width="1145" height="182" key="GridCell.Tab.3.center" timestamp="1583897011399">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1145" height="182" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1583897011399" />
+    <state width="1145" height="182" key="GridCell.Tab.3.left" timestamp="1583897011399">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1145" height="182" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1583897011399" />
+    <state width="1145" height="182" key="GridCell.Tab.3.right" timestamp="1583897011399">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1145" height="182" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1583897011399" />
+    <state x="323" y="66" key="NewModule_or_Project.wizard" timestamp="1583458976769">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="323" y="66" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1583458976769" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1583906941341">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583906941341" />
+    <state x="467" y="193" width="431" height="338" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1583381529292">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="467" y="193" width="431" height="338" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1366.728@0.0.1366.728" timestamp="1583381529292" />
+    <state x="399" y="11" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1583390230425">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="399" y="11" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1583390230425" />
+    <state x="375" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1584062015750">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="375" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584062015750" />
+    <state x="393" y="15" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583376392344">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="393" y="15" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1583376392344" />
+    <state x="454" y="81" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1583390548027">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="454" y="81" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1583390548027" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583397453157">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1583397453157" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/huodai/add_price_includetax_kong.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="654" column="22" lean-forward="true" selection-start-line="233" selection-start-column="11" selection-end-line="654" selection-end-column="22" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57" />
-      </provider>
-    </entry>
     <entry file="das://81855f0e-632c-4806-92f7-4870048e9782/schema/fba/table/price_include.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -658,30 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="193" column="17" selection-start-line="193" selection-start-column="17" selection-end-line="482" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#3607#3613#0#HTML" expanded="true" />
-            <element signature="e#3614#3620#0#HTML" expanded="true" />
-            <element signature="e#3620#3626#0#HTML" expanded="true" />
-            <element signature="e#3627#3633#0#HTML" expanded="true" />
-            <element signature="e#3633#3639#0#HTML" expanded="true" />
-            <element signature="e#3640#3646#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#0;n#form#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#tr#0;n#form#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#table#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#6695#6701#0#HTML" expanded="true" />
-            <element signature="e#6702#6708#0#HTML" expanded="true" />
-            <element signature="e#6708#6714#0#HTML" expanded="true" />
-            <element signature="e#6715#6721#0#HTML" expanded="true" />
-            <element signature="e#6721#6727#0#HTML" expanded="true" />
-            <element signature="e#6728#6734#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#table#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#0;n#form#0;n#table#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#tr#0;n#form#0;n#table#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -706,13 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/Mail/Mymail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3838">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/entities/huodai/copy_email.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -727,28 +839,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/service/Uploadservice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="72" column="50" selection-start-line="72" selection-start-column="50" selection-end-line="72" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/controller/Userservlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/service/Userservice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding>
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -773,20 +867,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="46" column="65" selection-start-line="46" selection-start-column="65" selection-end-line="46" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -825,27 +905,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/service/Huodaiservice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="420" selection-start-line="420" selection-end-line="420" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/Utils/RedisUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="176" selection-start-line="176" selection-end-line="176" />
-          <folding>
-            <element signature="e#4174#4175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/controller/options/Huodaiservlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="102" column="59" selection-start-line="102" selection-start-column="59" selection-end-line="102" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -860,18 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3496">
           <caret line="225" column="86" selection-start-line="225" selection-start-column="86" selection-end-line="225" selection-end-column="86" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#STYLE#0;n#input#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#p#1;n#!!top" expanded="true" />
-            <element signature="e#1835#1990#0#HTML" />
-            <element signature="e#2016#2171#0#HTML" />
-            <element signature="e#2197#2352#0#HTML" />
-            <element signature="e#2378#2533#0#HTML" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -910,32 +961,127 @@
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/service/Xinxiservice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/Filter/sessionFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6ad2957b-8b21-462c-8642-e23096b4d048/schema/fba/table/subscriber_address">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6ad2957b-8b21-462c-8642-e23096b4d048/schema/fba/table/copy_email">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="55" column="36" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/service/Userservice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/entities/chehang/temple_data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6ad2957b-8b21-462c-8642-e23096b4d048/schema/fba/table/amount">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6ad2957b-8b21-462c-8642-e23096b4d048/schema/fba/table/orders_details">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6ad2957b-8b21-462c-8642-e23096b4d048/schema/fba/table/orders">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/huodai/details.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="116" column="256" selection-start-line="116" selection-start-column="256" selection-end-line="116" selection-end-column="256" />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#div#2;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/controller/options/Huodaiservlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="420" column="118" selection-start-line="420" selection-start-column="105" selection-end-line="420" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/service/Uploadservice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/Mail/Mymail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="116" column="22" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/duogesi/service/Huodaiservice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="385" column="27" selection-start-line="385" selection-start-column="27" selection-end-line="385" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

@@ -62,6 +62,7 @@
                         <form action="<%=path%>/huodai/add_addion_price.do" style="text-align: center;margin-top:20px;" method="POST">
                             <select name="category">
                                 <option value="箱包">箱包</option>
+                                <option value="玻璃制品">玻璃制品</option>
                                 <option value="鞋子">鞋子</option>
                                 <option value="服饰">服饰</option>
                                 <option value="成人用品">成人用品</option>
