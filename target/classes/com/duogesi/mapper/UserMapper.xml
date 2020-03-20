@@ -26,6 +26,11 @@
             <result property="email_address" column="email_address" />
         </collection>
     </resultMap>
+    <resultMap type="com.duogesi.entities.huodai.copy_email" id="cc_mail" >
+        <result property="email_id" column="email_id" />
+        <result property="subscriber_id" column="subscriber_id" />
+        <result property="email_address" column="email_address" />
+    </resultMap>
 
           <select id="get_user"  resultMap="my">
                    select * from user_info
@@ -35,7 +40,7 @@
                 update user_info set password=#{password} where username=#{username}
             </update>
             <!--获取抄送邮件是否为空-->
-            <select id="check_cc_if_null" resultType="com.duogesi.entities.huodai.copy_email">
+            <select id="check_cc_if_null" resultMap="cc_mail">
                 select *
                 from copy_email
                 where subscriber_id=#{id}
@@ -53,8 +58,8 @@
                         where s.id=#{id}
               </select>
 <!--        获取CC邮箱-->
-            <select id="get_cc_email" resultType="com.duogesi.entities.huodai.copy_email">
-                select email_address
+            <select id="get_cc_email" resultMap="cc_mail">
+                select *
                 from copy_email
                 where subscriber_id=#{subscriber_id}
             </select>

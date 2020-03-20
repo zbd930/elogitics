@@ -209,7 +209,7 @@
             <%--弹窗--%>
             <div id="light" class="white_content" >
                 <img src="<%=path%>/image/close.png" style="width: 20px;height: 20px;position: absolute;right: 10px;top:0px;cursor: pointer" onclick = "closeDialog1()">
-                <form action="<%=path%>/huodai/add_price_haika.do" style="text-align: center" method="POST"  enctype="multipart/form-data">
+                <form action="<%=path%>/huodai/add_price_haika.do" method="POST"  enctype="multipart/form-data">
                     <select name="qiyungang">
                         <option value="深圳">深圳</option>
                         <option value="广州">广州</option>

@@ -59,7 +59,7 @@
                     <%--弹窗--%>
                     <div id="light" class="white_content" >
                         <img src="<%=path%>/image/close.png" style="margin-bottom: 80px;width: 20px;height: 20px;position: absolute;right: 5px;cursor: pointer" onclick = "closeDialog()">
-                        <form action="<%=path%>/huodai/add_addion_price.do" style="text-align: center;margin-top:20px;" method="POST">
+                        <form action="<%=path%>/huodai/add_addion_price.do" style="margin-top:20px;" method="POST">
                             <select name="category">
                                 <option value="箱包">箱包</option>
                                 <option value="玻璃制品">玻璃制品</option>
@@ -72,7 +72,7 @@
                                 <option value="机顶盒">机顶盒</option>
                                 <option value="3C类电子">3C类电子</option>
                             </select>
-                            <input type="number" name="price" style="width: 100px">/KG
+                            <input type="number" name="price" style="width: 250px"  placeholder="单位为KG" >
                             <select name="country">
                                 <option value="American">美线</option>
                                 <option value="Europe">欧线</option>
