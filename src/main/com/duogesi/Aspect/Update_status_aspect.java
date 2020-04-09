@@ -106,6 +106,7 @@ public class Update_status_aspect {
             Boolean value = false;
             int[] statu=new int[orders.size()];
             String[] numbers=new String[orders.size()];
+            //第一重循环
             for (int i = 0; i < orders.size(); i++) {
                 int address_id=orders.get(i).getAddress_id();
                 //判断有没有抄送邮件

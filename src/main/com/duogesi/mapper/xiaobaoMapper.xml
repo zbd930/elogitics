@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace命名空间，唯一标识。一般指定为自定义的接口文件，下面相当于这个接口的实现类 -->
+<mapper namespace="com.duogesi.mapper.xiaobaoMapper">
+    <resultMap id="xiaobao" type="com.duogesi.entities.huodai.xiaobao">
+        <id column="xiaobao_id" property="xiaobao_id"/>
+        <result column="country" property="country"/>
+        <result column="desc" property="desc"/>
+        <result column="timetable" property="timetable"/>
+        <result column="detail" property="detail"/>
+    </resultMap>
+    <resultMap id="price_xiaobao" type="com.duogesi.entities.huodai.price_xiaobao">
+        <id column="price_id" property="price_id"/>
+        <result column="weight" property="weight"/>
+        <result column="amount" property="amount"/>
+        <result column="xiaobao_id" property="xiaobao_id"/>
+    </resultMap>
+    
+<!--    添加小包任务-->
+    <insert id="put_mission_" parameterType="com.duogesi.entities.huodai.xiaobao">
+        insert into mission_small (`desc`, country, timetable, detail,user_id) values (#{desc},#{country},#{timetable},#{detail},#{user_id})
+    </insert>
+
+<!--    获取所有小包任务-->
+    <select id="pull_mission" resultMap="xiaobao">
+        select *
+        from mission_small
+        where user_id=#{user_id}
+        <if test="page!=0 and pagesize!=0">
+            limit #{page} , #{pageSize}
+        </if>
+    </select>
+<!--    删除小包任务-->
+    <delete id="delete_mission" >
+        delete from mission_small where xiaobao_id=#{xiaobao_id}
+    </delete>
+<!--    获取小包价格-->
+    <select id="get_small_mission" resultMap="price_xiaobao">
+        select *
+        from price_xiaobao
+        where xiaobao_id=#{xiaobao_id}
+    </select>
+<!--    添加小包价格-->
+    <insert id="add_price_xiaobao">
+        insert into price_xiaobao (weight, amount,xiaobao_id) values (#{weight},#{amount},#{xiaobao_id})
+    </insert>
+<!--    修改有效期-->
+    <update id="update_timetable">
+        update mission_small
+        set timetable=#{timetable}
+        where xiaobao_id=#{xiaobao_id}
+    </update>
+<!--    删除小包价格-->
+    <delete id="delete_xiaobao_price">
+        delete from price_xiaobao
+        where price_id=#{price_id}
+    </delete>
+</mapper>

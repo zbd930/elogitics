@@ -15,33 +15,6 @@
 <head>
     <title>e跨境通</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <style>
-        .black_overlay{
-            display: none;
-            position: absolute;
-            top: 0%;
-            left: 0%;
-            width: 100%;
-            height: 100%;
-            background-color: black;
-            z-index:1001;
-            -moz-opacity: 0.8;
-            opacity:.80;
-            filter: alpha(opacity=88);
-        }
-        .white_content {
-            display: none;
-            position: absolute;
-            top: 25%;
-            left: 25%;
-            width: 55%;
-            height: 65%;
-            padding: 20px;
-            background-color: white;
-            z-index:1002;
-            overflow: auto;
-        }
-    </style>
     <script type="text/javascript">
 
         function validate(form)
@@ -105,7 +78,7 @@
         <p><a href = "JavaScript:void(0)" onclick = "openDialog()">点击添加司机信息</a></p>
         <div id="light" class="white_content">
             <img src="<%=path%>/image/close.png" style="width: 20px;height: 20px;position: absolute;right: 10px;top: 0px;cursor: pointer" onclick = "closeDialog()">
-           <form action="<%=path%>/chehang/insert_driver.do" style="text-align: center" method="post">
+           <form action="<%=path%>/chehang/insert_driver.do" style="text-align: center;margin-top: 10px" method="post">
                <span>请添加司机信息</span>
                <input name="phone" style="width: 30%;margin-left: 35%"placeholder="请输入手机号" type="text">
                <input name="id_card" style="width: 30%;margin-left: 35%" placeholder="请输入身份证号" type="text">

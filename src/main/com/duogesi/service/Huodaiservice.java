@@ -11,6 +11,7 @@ import com.duogesi.entities.huodai.*;
 import com.duogesi.mapper.ShipMapper;
 import com.duogesi.mapper.UserMapper;
 import com.duogesi.mapper.additionMapper;
+import com.duogesi.mapper.xiaobaoMapper;
 import org.apache.commons.beanutils.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -54,6 +55,8 @@ public class Huodaiservice {
     private UserMapper userMapper;
     @Autowired
     private Swtich swtich;
+    @Autowired
+    private xiaobaoMapper xiaobaoMapper;
 
     public static Map convertBeanToMap(Object bean)
             throws IntrospectionException, IllegalAccessException, InvocationTargetException {
@@ -766,4 +769,45 @@ public class Huodaiservice {
         }else return 3;
     }
 
+    //添加小包任务
+    public int add_xiaobao_mission(xiaobao xiaobao){
+        return xiaobaoMapper.put_mission_(xiaobao);
+    }
+    //获取小包任务
+    public PageBean get_xiaobao_mission(int user_id,int page,int pageSize){
+        if(page==0){
+            page=1;
+        }
+        List<xiaobao> list = xiaobaoMapper.pull_mission(user_id,(page-1)*10, pageSize);
+        PageBean pageBean = new PageBean();
+        int allRows = xiaobaoMapper.pull_mission(user_id,0,0).size();
+        int totalPage = pageBean.getTotalPages(pageSize, allRows);
+        int currentPage = pageBean.getCurPage(page);
+        pageBean.setList(list);
+        pageBean.setAllRows(allRows);
+        pageBean.setCurrentPage(currentPage);
+        pageBean.setTotalPage(totalPage);
+        return pageBean;
+    }
+    //删除小包
+    public  int delete_xiaobao(int id){
+       return xiaobaoMapper.delete_mission(id);
+    }
+
+    //获取小包价格
+    public List<price_xiaobao> get_small_mission(int id){
+        return xiaobaoMapper.get_small_mission(id);
+    }
+    //添加小包的价格
+    public int add_price_xiaobao(price_xiaobao price_xiaobao){
+        return xiaobaoMapper.add_price_xiaobao(price_xiaobao);
+    }
+    //修改有效期
+    public int update_timetable(int misson_id,String timetable){
+        return xiaobaoMapper.update_timetable(timetable,misson_id);
+    }
+    //删除小包价格
+    public int delete_xiaobao_price(int id){
+        return xiaobaoMapper.delete_xiaobao_price(id);
+    }
 }

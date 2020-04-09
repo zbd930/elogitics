@@ -16,7 +16,6 @@
     <title>e跨境通</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script type="text/javascript">
-
         function display(id) {
             var traget = document.getElementById(id);
             if (traget.style.display == "none") {
@@ -79,6 +78,8 @@
                             <p style="font-size: 16px;">空运价格</p></a>
                         <a href="<%=path%>/huodai/haika.do">
                             <p style="font-size: 16px;">海卡价格</p></a>
+                        <a href="<%=path%>/huodai/get_xiaobao.do?page=1">
+                            <p style="font-size: 16px;">小包价格</p></a>
                         <a href="<%=path%>/huodai/get_price.do">
                             <p style="font-size: 16px;">附加费</p></a>
                         <a href="<%=path%>/huodai/zhuangdan1.do">

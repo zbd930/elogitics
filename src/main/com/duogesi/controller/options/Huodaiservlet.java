@@ -8,6 +8,7 @@ import com.duogesi.entities.chehang.order;
 import com.duogesi.entities.chehang.temple_data;
 import com.duogesi.entities.huodai.*;
 import com.duogesi.service.Huodaiservice;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -265,6 +266,12 @@ public class Huodaiservlet {
         mv.addObject("japan_haika",japan_haika);
 
         mv.setViewName("huodai/add_price_nottax");
+        return mv;
+    }
+    //小包页面
+    @RequestMapping(value = "xiaobao.do")
+    public  ModelAndView xiaobao(ModelAndView mv) throws Exception{
+        mv.setViewName("huodai/add_price_xiaobao");
         return mv;
     }
 
@@ -566,4 +573,131 @@ public class Huodaiservlet {
         return mv;
     }
 
+    //小包渠道，添加任务
+    @RequestMapping("add_xiaobao.do")
+    public ModelAndView add_xiaobao(ModelAndView mv,xiaobao xiaobao){
+        User user=(User)session.getAttribute("user");
+        xiaobao.setUser_id(user.getId());
+        int result=0;
+        try {
+            result=huodaiservice.add_xiaobao_mission(xiaobao);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        if (result==1){
+            mv.setViewName("redirect: ../huodai/get_xiaobao.do?add=success&&page=1");
+        }else {
+            mv.setViewName("redirect: ../huodai/get_xiaobao.do?add=fail&&page=1");
+        }
+        return mv;
+    }
+
+    //小包渠道，获取所有任务
+    @RequestMapping("get_xiaobao.do")
+    public ModelAndView get_xiaobao(int page,ModelAndView mv,String add){
+        User user=(User)session.getAttribute("user");
+        PageBean pageBean=null;
+        try {
+            pageBean= huodaiservice.get_xiaobao_mission(user.getId(),page,10);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        mv.addObject("PageBean",pageBean);
+        mv.setViewName("huodai/add_price_xiaobao");
+        if (add!=null){
+            if (add.equals("success")) {
+                mv.addObject("add", "成功");
+            }else if (add.equals("fail")){
+                mv.addObject("add", "失败");
+            }
+        }
+        return mv;
+    }
+    //小包渠道，删除任务
+    @RequestMapping(value = "xiaobao_delete.do")
+    public ModelAndView delete(int id,ModelAndView mv){
+        int result=0;
+        try {
+            result=huodaiservice.delete_xiaobao(id);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        if (result==1) {
+            mv.setViewName("redirect: ../huodai/get_xiaobao.do?add=success&&page=1");
+        }else {
+            mv.setViewName("redirect: ../huodai/get_xiaobao.do?add=fail&&page=1");
+        }
+        return mv;
+    }
+
+    @RequestMapping("price_xiaobao_get.do")
+    //获取小包价格
+    public ModelAndView get_small_mission(int id,ModelAndView mv,String timetable,String result){
+        mv.setViewName("huodai/xiaobao_details");
+        List<price_xiaobao> list=null;
+        try {
+            list=huodaiservice.get_small_mission(id);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        mv.addObject("xiaobao",list);
+        mv.addObject("timetable",timetable);
+        mv.addObject("id",id);
+        mv.addObject("add",result);
+
+        return mv;
+    }
+    @RequestMapping("add_price_xiaobao.do")
+    //添加小包价格
+    public ModelAndView add_price_xiaobao(int id,price_xiaobao price_xiaobao,ModelAndView mv){
+        mv.setViewName("redirect: ../huodai/price_xiaobao_get.do?id="+id);
+        price_xiaobao.setXiaobao_id(id);
+        int result=0;
+        try {
+            result=huodaiservice.add_price_xiaobao(price_xiaobao);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        if (result==1){
+            mv.addObject("results","成功");
+        }else {
+            mv.addObject("results","失败");
+        }
+        return mv;
+    }
+
+    //修改有效期
+    @RequestMapping("timetable.do")
+    public ModelAndView update_timetable(int misson_id,String timetable,ModelAndView mv){
+        int result=0;
+        try {
+            result=huodaiservice.update_timetable(misson_id,timetable);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        mv.setViewName("redirect: ../huodai/price_xiaobao_get.do?id="+misson_id);
+        if (result==1){
+            mv.addObject("results","成功");
+        }else {
+            mv.addObject("results","失败");
+        }
+        return mv;
+    }
+    //删除小包价格
+    @RequestMapping("delete_xiaobao_price.do")
+    public ModelAndView delete_xiaobao_price(int id,ModelAndView mv,int xiaobao_id){
+        int result=0;
+        try {
+            result=huodaiservice.delete_xiaobao_price(id);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        mv.setViewName("redirect: ../huodai/price_xiaobao_get.do?id="+xiaobao_id);
+        if (result==1){
+            mv.addObject("results","成功");
+        }else {
+            mv.addObject("results","失败");
+        }
+        return mv;
+    }
 }

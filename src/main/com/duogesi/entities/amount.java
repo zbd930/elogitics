@@ -4,6 +4,7 @@ import com.duogesi.entities.chehang.order;
 import com.duogesi.entities.huodai.Ship;
 
 import java.math.BigDecimal;
+import java.util.Objects;
 
 public class amount {
     private int amount_id;
@@ -20,7 +21,6 @@ public class amount {
     private String openid;
     private order order;
     private Ship ship;
-
 
     public BigDecimal getAll() {
         return all;
