@@ -142,4 +142,13 @@
         from orders as o,orders_details as d
         where o.id=#{id} and o.id=d.order_id
     </select>
+    <!--获取小包的订单-->
+    <select id="get_xiaobao_orders" resultMap="result">
+        select o.numbers,d.volume,d.weight,o.picking,o.dest,o.status,category
+        from orders as o,orders_details as d
+        where o.id=d.order_id and d.user_id=#{user_id}
+        <if test="currIndex!=0 and pageSize!=0">
+            limit #{currIndex} , #{pageSize}
+        </if>
+    </select>
 </mapper>

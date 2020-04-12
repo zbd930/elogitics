@@ -49,7 +49,6 @@
             document.getElementById('light1').style.display='none';
             document.getElementById('fade1').style.display='none'
         };
-
     </script>
 </head>
 <body>

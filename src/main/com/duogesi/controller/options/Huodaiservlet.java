@@ -700,4 +700,13 @@ public class Huodaiservlet {
         }
         return mv;
     }
+    // 任务查看小宝
+    @RequestMapping("chakanrenwu_xiaobao.do")
+    public ModelAndView chakanrenwu_xiaobao(int page){
+        User user= (User) session.getAttribute("user");
+        PageBean pageBean =huodaiservice.get_small_mission(10,page,user.getId());
+        ModelAndView mv=new ModelAndView("huodai/allsmallmission");
+        mv.addObject("pagebean",pageBean);
+        return mv;
+    }
 }

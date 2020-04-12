@@ -810,4 +810,25 @@ public class Huodaiservice {
     public int delete_xiaobao_price(int id){
         return xiaobaoMapper.delete_xiaobao_price(id);
     }
+    //    全部小包
+    public PageBean get_small_mission(int pageSize, int page,int user_id){
+        if(page==0){
+            page=1;
+        }
+        List<order> list= chehangMapper.get_xiaobao_orders(user_id,(page-1)*10,pageSize);
+        Swtich swtich=new Swtich();
+        for (order order: list
+        ) {
+            swtich.swtich_order(order);
+        }
+        PageBean pageBean = new PageBean();
+        int allRows = chehangMapper.get_xiaobao_orders(user_id,0,0).size();
+        int totalPage = pageBean.getTotalPages(pageSize, allRows);
+        int currentPage = pageBean.getCurPage(page);
+        pageBean.setList(list);
+        pageBean.setAllRows(allRows);
+        pageBean.setCurrentPage(currentPage);
+        pageBean.setTotalPage(totalPage);
+        return pageBean;
+    }
 }

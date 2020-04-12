@@ -113,7 +113,7 @@
                     <input type="text" name="desc" placeholder="描述" >
                     <select name="country">
                         <option value="">目的国</option>
-                        <option value="Amercian">美国</option>
+                        <option value="American">美国</option>
                         <option value="England">英国</option>
                         <option value="Russia">俄罗斯</option>
                         <option value="Korea">韩国</option>

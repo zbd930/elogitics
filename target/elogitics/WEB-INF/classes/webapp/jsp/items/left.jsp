@@ -59,6 +59,8 @@
                     <div id="lb2" style="display:none">
                         <a href="<%=path%>/huodai/allmission.do?page=1">
                             <p style="font-size: 16px;">所有任务</p></a>
+                        <a href="<%=path%>/huodai/chakanrenwu_xiaobao.do?page=1">
+                            <p style="font-size: 16px;">特速渠道任务</p></a>
                         <a href="<%=path%>/huodai/jump.do">
                             <p style="font-size: 16px;">新增任务</p></a>
                         <a href="<%=path%>/huodai/jump3.do">

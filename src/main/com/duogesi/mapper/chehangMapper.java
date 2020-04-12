@@ -40,4 +40,6 @@ public interface chehangMapper {
     order get_mudigang_haika(int id);
     //更新数据后,需要知道拆贵港
     order get_chaigui_addition(int id);
+    //获取所有小包的货
+    List<order> get_xiaobao_orders(@Param("user_id") int user_id, @Param("currIndex") int currIndex, @Param("pageSize") int pageSize);
 }
